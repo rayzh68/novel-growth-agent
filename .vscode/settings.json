@@ -1,0 +1,8 @@
+﻿{
+  "files.exclude": {
+    "**/.venv": true,
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/*.dist-info": true
+  }
+}

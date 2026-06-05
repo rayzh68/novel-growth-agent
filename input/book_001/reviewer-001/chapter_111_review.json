@@ -1,0 +1,35 @@
+{
+  "chapter_no": 111,
+  "review_mode": "rewrite",
+  "score": 7.8,
+  "can_be_final": false,
+  "main_problems": [
+    "The chapter lacks emotional intensity and female-reader projection. Elara's internal emotional state is underdeveloped; her excitement and strategic thinking are narrated rather than felt.",
+    "The pacing is slow and lacks forward momentum. The chapter is largely a shopping trip with exposition about chili peppers and tomatoes, with no significant conflict or tension.",
+    "The ending hook is weak. The shadowy figure and 'someone was watching' line feel generic and do not create strong next-chapter desire.",
+    "Dialogue is functional but often stiff and unnatural, e.g., 'You got ripped off!' and 'Do I look like someone who can’t?' which break immersion.",
+    "The chapter does not advance any major plot arc. It is a filler scene that could be condensed or cut without losing story progression.",
+    "Character consistency: Elara's transmigrator knowledge is revealed too casually (mentioning 'cayenne, bird’s eye, sea peppers') which risks premature exposure and feels out of character for her usually guarded nature."
+  ],
+  "fix_suggestions": [
+    "Inject emotional stakes: show Elara's fear of poverty, her desperation to succeed, or her anxiety about being discovered. Make her internal monologue visceral.",
+    "Add a micro-conflict: a rival customer, a suspicious shopkeeper, or a moment where Elara nearly slips up about her knowledge. Create tension within the scene.",
+    "Strengthen the ending: instead of a vague shadow, have a specific character (e.g., Julian Sterling or a known antagonist) witness her, creating a concrete threat.",
+    "Condense the shopping sequences. Use summary for routine purchases and focus dialogue on the chili/tomato reveal, which is the only plot-relevant moment.",
+    "Make Master Song more distinct. Currently he is a bland exposition device. Give him a personality quirk or hidden agenda to add intrigue.",
+    "Remove or rephrase unnatural dialogue lines. Replace 'You got ripped off!' with something more period-appropriate and less jarring."
+  ],
+  "commercial_strengths": [
+    "The introduction of tomatoes is a fresh plot element that can drive future business arc and reader curiosity.",
+    "Elara's resourcefulness and business acumen are on display, appealing to the 'rags-to-riches' commercial hook.",
+    "The chapter maintains the historical setting and avoids major anachronisms (except the dialogue issue).",
+    "The relationship with Master Song (Alaric Sterling) is developed, which is important for the business ally arc."
+  ],
+  "risk_flags": [
+    "Elara's casual mention of multiple pepper names ('cayenne, bird’s eye, sea peppers') is a drift risk: it reveals too much modern knowledge too easily, violating her secret identity constraint.",
+    "The chapter has no romantic tension or male lead presence (Kaelen Sterling is absent), which may disappoint readers expecting romance progression.",
+    "The pacing is too slow for mobile fiction; readers may skip or drop the chapter.",
+    "The ending hook is generic and does not create urgency to read the next chapter."
+  ],
+  "final_decision": "Needs rewrite before final. The chapter is commercially weak due to low emotional intensity, slow pacing, and a weak hook. It requires tightening, emotional deepening, and a stronger cliffhanger to meet Dreame/GoodNovel standards."
+}

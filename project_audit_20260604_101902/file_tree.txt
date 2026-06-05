@@ -1,0 +1,342 @@
+﻿
+FullName                                                      Length LastWriteTime    
+--------                                                      ------ -------------    
+D:\novel-growth-agent\.venv                                          2026/6/1 14:35:56
+D:\novel-growth-agent\.vscode                                        2026/6/3 16:17:52
+D:\novel-growth-agent\config                                         2026/6/3 10:02:25
+D:\novel-growth-agent\core                                           2026/6/1 14:38:32
+D:\novel-growth-agent\data                                           2026/6/1 14:34:30
+D:\novel-growth-agent\input                                          2026/6/3 13:21:36
+D:\novel-growth-agent\output                                         2026/6/3 12:24:16
+D:\novel-growth-agent\research                                       2026/6/3 11:45:22
+D:\novel-growth-agent\scripts                                        2026/6/1 18:23:34
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084057        2026/6/3 8:40:57 
+D:\novel-growth-agent\__pycache__                                    2026/6/3 22:07:56
+D:\novel-growth-agent\.env                                    243    2026/6/3 12:05:51
+D:\novel-growth-agent\copy_to_d_drive.ps1                     425    2026/6/1 14:24:27
+D:\novel-growth-agent\main.py                                 8427   2026/6/1 17:35:37
+D:\novel-growth-agent\market_profile_builder.py               34646  2026/6/3 22:07:56
+D:\novel-growth-agent\README.md                               3475   2026/6/1 14:26:52
+D:\novel-growth-agent\requirements.txt                        986    2026/6/3 9:38:07 
+D:\novel-growth-agent\research_pipeline.py                    864    2026/6/3 22:07:56
+D:\novel-growth-agent\setup_windows.ps1                       630    2026/6/1 14:26:52
+D:\novel-growth-agent\.vscode\settings.json                   132    2026/6/3 16:17:52
+D:\novel-growth-agent\config\research_queries.json            355    2026/6/3 10:02:25
+D:\novel-growth-agent\config\settings.json                    1108   2026/6/1 14:24:27
+D:\novel-growth-agent\core\__pycache__                               2026/6/1 18:35:54
+D:\novel-growth-agent\core\book_loader.py                     3324   2026/6/1 14:24:27
+D:\novel-growth-agent\core\file_utils.py                      1994   2026/6/1 18:35:53
+D:\novel-growth-agent\core\llm_client.py                      2467   2026/6/1 14:24:27
+D:\novel-growth-agent\core\markdown.py                        548    2026/6/1 14:24:27
+D:\novel-growth-agent\core\metrics.py                         4897   2026/6/1 14:24:27
+D:\novel-growth-agent\core\__init__.py                        0      2026/6/1 14:24:27
+D:\novel-growth-agent\data\channel_rules.json                 727    2026/6/1 14:24:27
+D:\novel-growth-agent\data\event_schema.json                  240    2026/6/1 14:24:27
+D:\novel-growth-agent\data\genre_taxonomy.json                514    2026/6/1 14:24:27
+D:\novel-growth-agent\data\hook_templates.json                669    2026/6/1 14:24:27
+D:\novel-growth-agent\data\scoring_rules.json                 517    2026/6/1 14:24:27
+D:\novel-growth-agent\data\utm_schema.json                    212    2026/6/1 14:24:27
+D:\novel-growth-agent\input\book_001                                 2026/6/3 13:22:57
+D:\novel-growth-agent\input\book_001\reader-001                      2026/6/3 13:22:57
+D:\novel-growth-agent\input\book_001\reviewer-001                    2026/6/3 13:22:58
+D:\novel-growth-agent\input\book_001\story_bible-001                 2026/6/3 13:22:57
+D:\novel-growth-agent\input\book_001\reader-001\chapter_00... 2438   2026/5/31 19:4...
+D:\novel-growth-agent\input\book_001\reader-001\chapter_00... 3305   2026/5/31 19:4...
+D:\novel-growth-agent\input\book_001\reader-001\chapter_00... 2573   2026/5/31 19:4...
+D:\novel-growth-agent\input\book_001\reader-001\chapter_00... 2623   2026/5/31 19:4...
+D:\novel-growth-agent\input\book_001\reader-001\chapter_00... 2784   2026/5/31 19:4...
+D:\novel-growth-agent\input\book_001\reader-001\chapter_00... 2387   2026/5/31 19:5...
+D:\novel-growth-agent\input\book_001\reader-001\chapter_00... 2600   2026/5/31 19:5...
+D:\novel-growth-agent\input\book_001\reader-001\chapter_00... 2470   2026/5/31 19:5...
+D:\novel-growth-agent\input\book_001\reader-001\chapter_00... 2822   2026/5/31 19:5...
+D:\novel-growth-agent\input\book_001\reader-001\chapter_01... 3228   2026/5/31 19:5...
+D:\novel-growth-agent\input\book_001\reader-001\chapter_01... 2555   2026/5/31 19:5...
+D:\novel-growth-agent\input\book_001\reader-001\chapter_01... 2896   2026/5/31 20:0...
+D:\novel-growth-agent\input\book_001\reader-001\chapter_01... 2527   2026/6/1 3:05:44 
+D:\novel-growth-agent\input\book_001\reader-001\chapter_01... 2910   2026/6/1 11:01:49
+D:\novel-growth-agent\input\book_001\reader-001\chapter_01... 2811   2026/6/1 11:05:30
+D:\novel-growth-agent\input\book_001\reader-001\chapter_01... 2779   2026/6/1 11:07:14
+D:\novel-growth-agent\input\book_001\reader-001\chapter_01... 2804   2026/6/1 11:08:34
+D:\novel-growth-agent\input\book_001\reader-001\chapter_01... 2205   2026/6/1 11:09:50
+D:\novel-growth-agent\input\book_001\reader-001\chapter_01... 2344   2026/6/1 11:11:34
+D:\novel-growth-agent\input\book_001\reader-001\chapter_02... 2489   2026/6/1 11:13:07
+D:\novel-growth-agent\input\book_001\reader-001\chapter_02... 2698   2026/6/1 11:14:31
+D:\novel-growth-agent\input\book_001\reader-001\chapter_02... 2603   2026/6/1 11:16:11
+D:\novel-growth-agent\input\book_001\reader-001\chapter_02... 2701   2026/6/1 11:17:33
+D:\novel-growth-agent\input\book_001\reader-001\chapter_02... 2599   2026/6/1 11:19:30
+D:\novel-growth-agent\input\book_001\reader-001\chapter_02... 2375   2026/6/1 11:20:53
+D:\novel-growth-agent\input\book_001\reader-001\chapter_02... 2281   2026/6/1 11:22:22
+D:\novel-growth-agent\input\book_001\reader-001\chapter_02... 2158   2026/6/1 11:23:58
+D:\novel-growth-agent\input\book_001\reader-001\chapter_02... 3337   2026/6/1 11:25:14
+D:\novel-growth-agent\input\book_001\reader-001\chapter_02... 2140   2026/6/1 11:26:30
+D:\novel-growth-agent\input\book_001\reader-001\chapter_03... 2600   2026/6/1 11:27:51
+D:\novel-growth-agent\input\book_001\reader-001\chapter_03... 2793   2026/6/1 11:29:16
+D:\novel-growth-agent\input\book_001\reader-001\chapter_03... 2753   2026/6/1 11:30:55
+D:\novel-growth-agent\input\book_001\reader-001\chapter_03... 2389   2026/6/1 11:32:21
+D:\novel-growth-agent\input\book_001\reader-001\chapter_03... 2170   2026/6/1 11:33:44
+D:\novel-growth-agent\input\book_001\reader-001\chapter_03... 2732   2026/6/1 11:35:06
+D:\novel-growth-agent\input\book_001\reader-001\chapter_03... 2354   2026/6/1 11:36:27
+D:\novel-growth-agent\input\book_001\reader-001\chapter_03... 2476   2026/6/1 11:37:37
+D:\novel-growth-agent\input\book_001\reader-001\chapter_03... 2207   2026/6/1 11:40:30
+D:\novel-growth-agent\input\book_001\reader-001\chapter_03... 2835   2026/6/1 11:41:41
+D:\novel-growth-agent\input\book_001\reader-001\chapter_04... 2571   2026/6/1 11:42:50
+D:\novel-growth-agent\input\book_001\reader-001\chapter_04... 2447   2026/6/1 11:44:13
+D:\novel-growth-agent\input\book_001\reader-001\chapter_04... 2914   2026/6/1 12:21:16
+D:\novel-growth-agent\input\book_001\reader-001\chapter_04... 5537   2026/6/1 12:25:28
+D:\novel-growth-agent\input\book_001\reader-001\chapter_04... 3084   2026/6/1 12:28:51
+D:\novel-growth-agent\input\book_001\reader-001\chapter_04... 2686   2026/6/1 12:31:41
+D:\novel-growth-agent\input\book_001\reader-001\chapter_04... 2695   2026/6/1 12:34:40
+D:\novel-growth-agent\input\book_001\reader-001\chapter_04... 3047   2026/6/1 12:36:33
+D:\novel-growth-agent\input\book_001\reader-001\chapter_04... 2815   2026/6/1 12:38:21
+D:\novel-growth-agent\input\book_001\reader-001\chapter_04... 2546   2026/6/1 12:40:19
+D:\novel-growth-agent\input\book_001\reader-001\chapter_05... 2377   2026/6/1 12:41:30
+D:\novel-growth-agent\input\book_001\reader-001\chapter_05... 2625   2026/6/1 12:43:22
+D:\novel-growth-agent\input\book_001\reader-001\chapter_05... 3381   2026/6/1 12:44:54
+D:\novel-growth-agent\input\book_001\reader-001\chapter_05... 2237   2026/6/1 12:46:29
+D:\novel-growth-agent\input\book_001\reader-001\chapter_05... 2328   2026/6/1 13:25:33
+D:\novel-growth-agent\input\book_001\reader-001\chapter_05... 2471   2026/6/1 13:26:52
+D:\novel-growth-agent\input\book_001\reader-001\chapter_05... 2585   2026/6/1 13:28:31
+D:\novel-growth-agent\input\book_001\reader-001\chapter_05... 2225   2026/6/1 13:31:49
+D:\novel-growth-agent\input\book_001\reader-001\chapter_05... 2243   2026/6/1 13:33:36
+D:\novel-growth-agent\input\book_001\reader-001\chapter_05... 2711   2026/6/1 13:35:05
+D:\novel-growth-agent\input\book_001\reader-001\chapter_06... 3280   2026/6/1 13:37:58
+D:\novel-growth-agent\input\book_001\reader-001\chapter_06... 2734   2026/6/1 13:40:44
+D:\novel-growth-agent\input\book_001\reader-001\chapter_06... 2414   2026/6/1 13:42:12
+D:\novel-growth-agent\input\book_001\reader-001\chapter_06... 2434   2026/6/1 13:43:32
+D:\novel-growth-agent\input\book_001\reader-001\chapter_06... 2782   2026/6/1 13:44:51
+D:\novel-growth-agent\input\book_001\reader-001\chapter_06... 2724   2026/6/1 13:46:35
+D:\novel-growth-agent\input\book_001\reader-001\chapter_06... 2389   2026/6/1 13:47:52
+D:\novel-growth-agent\input\book_001\reader-001\chapter_06... 2316   2026/6/1 13:49:10
+D:\novel-growth-agent\input\book_001\reader-001\chapter_06... 2866   2026/6/1 13:50:26
+D:\novel-growth-agent\input\book_001\reader-001\chapter_06... 2317   2026/6/1 13:51:43
+D:\novel-growth-agent\input\book_001\reader-001\chapter_07... 2423   2026/6/1 13:52:58
+D:\novel-growth-agent\input\book_001\reader-001\chapter_07... 2303   2026/6/1 13:54:24
+D:\novel-growth-agent\input\book_001\reader-001\chapter_07... 2621   2026/6/1 13:55:44
+D:\novel-growth-agent\input\book_001\reader-001\chapter_07... 2919   2026/6/1 13:57:04
+D:\novel-growth-agent\input\book_001\reader-001\chapter_07... 2128   2026/6/1 13:58:21
+D:\novel-growth-agent\input\book_001\reader-001\chapter_07... 3218   2026/6/1 13:59:34
+D:\novel-growth-agent\input\book_001\reader-001\chapter_07... 3004   2026/6/1 14:02:05
+D:\novel-growth-agent\input\book_001\reader-001\chapter_07... 2848   2026/6/1 14:05:04
+D:\novel-growth-agent\input\book_001\reader-001\chapter_07... 2646   2026/6/1 14:10:49
+D:\novel-growth-agent\input\book_001\reader-001\chapter_08... 2417   2026/6/1 14:12:14
+D:\novel-growth-agent\input\book_001\reader-001\chapter_08... 2318   2026/6/1 14:13:49
+D:\novel-growth-agent\input\book_001\reader-001\chapter_08... 3413   2026/6/1 14:15:09
+D:\novel-growth-agent\input\book_001\reader-001\chapter_08... 2582   2026/6/1 14:16:39
+D:\novel-growth-agent\input\book_001\reader-001\chapter_08... 2882   2026/6/1 14:19:52
+D:\novel-growth-agent\input\book_001\reader-001\chapter_08... 2589   2026/6/1 14:21:51
+D:\novel-growth-agent\input\book_001\reader-001\chapter_08... 2279   2026/6/1 14:24:54
+D:\novel-growth-agent\input\book_001\reader-001\chapter_08... 2898   2026/6/1 14:26:43
+D:\novel-growth-agent\input\book_001\reader-001\chapter_08... 2507   2026/6/1 14:36:11
+D:\novel-growth-agent\input\book_001\reader-001\chapter_08... 3155   2026/6/1 14:39:02
+D:\novel-growth-agent\input\book_001\reader-001\chapter_09... 2211   2026/6/1 14:47:08
+D:\novel-growth-agent\input\book_001\reader-001\chapter_09... 2811   2026/6/1 14:48:59
+D:\novel-growth-agent\input\book_001\reader-001\chapter_09... 2258   2026/6/1 14:52:00
+D:\novel-growth-agent\input\book_001\reader-001\chapter_09... 2341   2026/6/1 15:00:06
+D:\novel-growth-agent\input\book_001\reader-001\chapter_09... 2614   2026/6/1 15:48:30
+D:\novel-growth-agent\input\book_001\reader-001\chapter_09... 2640   2026/6/1 15:29:58
+D:\novel-growth-agent\input\book_001\reader-001\chapter_09... 3646   2026/6/1 15:56:52
+D:\novel-growth-agent\input\book_001\reader-001\chapter_09... 2517   2026/6/1 15:52:00
+D:\novel-growth-agent\input\book_001\reader-001\chapter_09... 2893   2026/6/1 15:56:50
+D:\novel-growth-agent\input\book_001\reader-001\chapter_10... 3098   2026/6/1 15:59:15
+D:\novel-growth-agent\input\book_001\reader-001\chapter_10... 2666   2026/6/1 16:16:45
+D:\novel-growth-agent\input\book_001\reader-001\chapter_10... 2793   2026/6/1 16:20:41
+D:\novel-growth-agent\input\book_001\reader-001\chapter_10... 2813   2026/6/1 17:03:58
+D:\novel-growth-agent\input\book_001\reader-001\chapter_10... 3006   2026/6/1 16:16:41
+D:\novel-growth-agent\input\book_001\reader-001\chapter_10... 3276   2026/6/1 16:18:37
+D:\novel-growth-agent\input\book_001\reader-001\chapter_10... 2447   2026/6/1 16:22:38
+D:\novel-growth-agent\input\book_001\reader-001\chapter_10... 2440   2026/6/1 17:18:00
+D:\novel-growth-agent\input\book_001\reader-001\chapter_10... 3401   2026/6/1 17:14:55
+D:\novel-growth-agent\input\book_001\reader-001\chapter_10... 2291   2026/6/2 12:39:01
+D:\novel-growth-agent\input\book_001\reader-001\chapter_11... 2766   2026/6/2 13:13:38
+D:\novel-growth-agent\input\book_001\reader-001\chapter_11... 2180   2026/6/2 14:09:23
+D:\novel-growth-agent\input\book_001\reader-001\chapter_11... 2692   2026/6/2 15:40:33
+D:\novel-growth-agent\input\book_001\reader-001\chapter_11... 2597   2026/6/2 16:17:32
+D:\novel-growth-agent\input\book_001\reader-001\chapter_11... 1797   2026/6/2 18:20:27
+D:\novel-growth-agent\input\book_001\reader-001\chapter_11... 2067   2026/6/2 18:26:19
+D:\novel-growth-agent\input\book_001\reader-001\chapter_11... 2184   2026/6/2 18:56:15
+D:\novel-growth-agent\input\book_001\reader-001\chapter_11... 2393   2026/6/2 19:08:07
+D:\novel-growth-agent\input\book_001\reader-001\chapter_11... 2179   2026/6/2 19:12:07
+D:\novel-growth-agent\input\book_001\reader-001\chapter_11... 1867   2026/6/2 19:13:56
+D:\novel-growth-agent\input\book_001\reader-001\chapter_12... 2531   2026/6/2 19:15:52
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2450   2026/5/31 19:4...
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2891   2026/5/31 19:4...
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 4231   2026/5/31 19:4...
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2664   2026/5/31 19:4...
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3436   2026/5/31 19:4...
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2669   2026/5/31 19:4...
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 5619   2026/5/31 19:5...
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3763   2026/5/31 19:5...
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 6492   2026/5/31 19:5...
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3080   2026/5/31 19:5...
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2201   2026/5/31 19:5...
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3530   2026/5/31 20:0...
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 4433   2026/5/31 20:0...
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3949   2026/6/1 11:00:01
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 4090   2026/6/1 11:04:38
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3355   2026/6/1 11:06:28
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3674   2026/6/1 11:08:01
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3331   2026/6/1 11:09:18
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2430   2026/6/1 11:11:02
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 4004   2026/6/1 11:12:36
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3766   2026/6/1 11:14:00
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 6281   2026/6/1 11:15:20
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 4516   2026/6/1 11:17:00
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 4110   2026/6/1 11:18:58
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 5796   2026/6/1 11:20:19
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3607   2026/6/1 11:21:44
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2873   2026/6/1 11:23:06
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3410   2026/6/1 11:24:44
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3166   2026/6/1 11:26:00
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3289   2026/6/1 11:27:15
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 4164   2026/6/1 11:28:43
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3773   2026/6/1 11:30:11
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3048   2026/6/1 11:31:45
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2679   2026/6/1 11:33:11
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2905   2026/6/1 11:34:32
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2869   2026/6/1 11:35:55
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3562   2026/6/1 11:37:08
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 6981   2026/6/1 11:39:49
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3021   2026/6/1 11:41:14
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3004   2026/6/1 11:42:23
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3200   2026/6/1 11:43:44
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2975   2026/6/1 12:20:33
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3200   2026/6/1 12:24:54
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2908   2026/6/1 12:28:20
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3915   2026/6/1 12:31:08
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 4419   2026/6/1 12:34:07
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 6378   2026/6/1 12:35:42
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3021   2026/6/1 12:37:50
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2062   2026/6/1 12:39:41
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2770   2026/6/1 12:41:01
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2445   2026/6/1 12:42:49
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3219   2026/6/1 12:44:13
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 4261   2026/6/1 12:45:54
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3515   2026/6/1 12:47:20
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 5103   2026/6/1 13:26:20
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3022   2026/6/1 13:27:57
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3159   2026/6/1 13:31:08
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3368   2026/6/1 13:32:34
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 4659   2026/6/1 13:34:32
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3200   2026/6/1 13:37:27
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3626   2026/6/1 13:40:12
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3703   2026/6/1 13:41:37
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3234   2026/6/1 13:43:00
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3173   2026/6/1 13:44:20
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2417   2026/6/1 13:45:49
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2389   2026/6/1 13:47:23
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2764   2026/6/1 13:48:37
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3460   2026/6/1 13:49:56
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3701   2026/6/1 13:51:12
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3003   2026/6/1 13:52:24
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2846   2026/6/1 13:53:47
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2385   2026/6/1 13:55:12
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 5473   2026/6/1 13:56:32
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2701   2026/6/1 13:57:48
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2775   2026/6/1 13:59:02
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2629   2026/6/1 14:00:18
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2999   2026/6/1 14:03:16
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3945   2026/6/1 14:10:01
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3046   2026/6/1 14:11:43
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3926   2026/6/1 14:13:13
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2568   2026/6/1 14:14:40
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2405   2026/6/1 14:16:01
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 4041   2026/6/1 14:18:10
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3943   2026/6/1 14:21:20
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2785   2026/6/1 14:24:17
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2445   2026/6/1 14:26:07
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2927   2026/6/1 14:35:16
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 6350   2026/6/1 14:38:24
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 4212   2026/6/1 14:45:34
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2952   2026/6/1 14:48:13
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2940   2026/6/1 14:50:17
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3079   2026/6/1 14:59:15
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3091   2026/6/1 15:30:41
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3570   2026/6/1 15:17:17
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 7627   2026/6/1 15:49:24
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3095   2026/6/1 15:51:15
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3713   2026/6/1 15:56:11
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3209   2026/6/1 15:58:36
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3426   2026/6/1 16:15:35
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3051   2026/6/1 16:19:24
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 4601   2026/6/1 16:23:31
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2545   2026/6/1 16:15:26
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 5864   2026/6/1 16:17:45
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3946   2026/6/1 16:21:05
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2964   2026/6/1 17:05:21
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 5295   2026/6/1 17:14:07
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3336   2026/6/2 12:38:40
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2835   2026/6/2 13:13:10
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3476   2026/6/2 14:08:53
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2789   2026/6/2 15:40:13
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2798   2026/6/2 16:17:14
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3497   2026/6/2 18:20:11
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3816   2026/6/2 18:26:02
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3711   2026/6/2 18:55:59
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 3125   2026/6/2 19:07:39
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2795   2026/6/2 19:11:50
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2226   2026/6/2 19:13:39
+D:\novel-growth-agent\input\book_001\reviewer-001\chapter_... 2437   2026/6/2 19:15:34
+D:\novel-growth-agent\input\book_001\story_bible-001\adapt...        2026/6/3 13:22:57
+D:\novel-growth-agent\input\book_001\story_bible-001\rules           2026/6/3 13:22:57
+D:\novel-growth-agent\input\book_001\story_bible-001\bible... 14539  2026/5/31 17:1...
+D:\novel-growth-agent\input\book_001\story_bible-001\chapt... 203097 2026/5/31 17:1...
+D:\novel-growth-agent\input\book_001\story_bible-001\comme... 16653  2026/5/31 17:1...
+D:\novel-growth-agent\input\book_001\story_bible-001\sourc... 2341   2026/5/31 17:0...
+D:\novel-growth-agent\input\book_001\story_bible-001\story... 1053   2026/5/31 17:0...
+D:\novel-growth-agent\input\book_001\story_bible-001\adapt... 13552  2026/5/31 17:1...
+D:\novel-growth-agent\input\book_001\story_bible-001\adapt... 227012 2026/5/31 17:1...
+D:\novel-growth-agent\input\book_001\story_bible-001\adapt... 64811  2026/5/31 17:1...
+D:\novel-growth-agent\input\book_001\story_bible-001\adapt... 13602  2026/5/31 17:1...
+D:\novel-growth-agent\input\book_001\story_bible-001\adapt... 13533  2026/5/31 17:1...
+D:\novel-growth-agent\input\book_001\story_bible-001\rules... 23028  2026/5/31 17:1...
+D:\novel-growth-agent\input\book_001\story_bible-001\rules... 16448  2026/5/31 17:1...
+D:\novel-growth-agent\research\providers                             2026/6/3 8:34:10 
+D:\novel-growth-agent\research\__pycache__                           2026/6/3 22:07:56
+D:\novel-growth-agent\research\analyzer.py                    15261  2026/6/3 22:07:56
+D:\novel-growth-agent\research\batch_runner.py                4561   2026/6/3 22:07:56
+D:\novel-growth-agent\research\cleaner.py                     3876   2026/6/3 22:07:56
+D:\novel-growth-agent\research\runner.py                      1870   2026/6/3 22:07:56
+D:\novel-growth-agent\research\schema.py                      492    2026/6/3 8:34:10 
+D:\novel-growth-agent\research\__init__.py                    23     2026/6/3 8:34:10 
+D:\novel-growth-agent\research\providers\__pycache__                 2026/6/3 22:02:11
+D:\novel-growth-agent\research\providers\facebook.py          4906   2026/6/3 9:32:53 
+D:\novel-growth-agent\research\providers\google.py            4037   2026/6/3 12:04:21
+D:\novel-growth-agent\research\providers\reddit.py            2728   2026/6/3 9:51:41 
+D:\novel-growth-agent\research\providers\__init__.py          24     2026/6/3 8:34:10 
+D:\novel-growth-agent\scripts\__pycache__                            2026/6/1 18:23:42
+D:\novel-growth-agent\scripts\export_feedback.py              827    2026/6/1 14:24:27
+D:\novel-growth-agent\scripts\import_ad_report.py             763    2026/6/1 14:24:27
+D:\novel-growth-agent\scripts\import_book_package.py          895    2026/6/1 14:24:27
+D:\novel-growth-agent\scripts\run_analysis.py                 24276  2026/6/1 18:23:42
+D:\novel-growth-agent\scripts\run_analysis.py.bak_encoding... 26129  2026/6/1 17:35:37
+D:\novel-growth-agent\scripts\run_analysis.py.bak_v1_3_202... 17279  2026/6/1 17:50:07
+D:\novel-growth-agent\scripts\run_growth_pipeline.py          10717  2026/6/1 17:35:37
+D:\novel-growth-agent\scripts\__init__.py                     0      2026/6/1 14:26:39
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084...        2026/6/1 14:38:32
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084...        2026/6/1 14:34:30
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084...        2026/6/1 14:24:27
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084...        2026/6/3 8:40:57 
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084...        2026/6/1 14:34:31
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084...        2026/6/1 17:35:38
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 6283   2026/6/1 14:24:27
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 14051  2026/6/1 17:35:37
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 5106   2026/6/1 14:24:27
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 2478   2026/6/1 14:24:27
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 4746   2026/6/1 14:24:27
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 2809   2026/6/1 14:24:27
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 2470   2026/6/1 14:24:27
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 0      2026/6/1 14:24:27
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084...        2026/6/1 14:34:30
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084...        2026/6/1 14:34:30
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 589    2026/6/1 14:24:27
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 603    2026/6/1 14:24:27
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 484    2026/6/1 14:24:27
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 484    2026/6/1 14:24:27
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 482    2026/6/1 14:24:27
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 471    2026/6/1 14:24:27
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 485    2026/6/1 14:24:27
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 474    2026/6/1 14:24:27
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 480    2026/6/1 14:24:27
+D:\novel-growth-agent\_archive_before_rebuild_20260603_084... 482    2026/6/1 14:24:27
+
+

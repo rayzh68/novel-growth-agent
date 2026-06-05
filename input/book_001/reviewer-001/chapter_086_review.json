@@ -1,0 +1,31 @@
+{
+  "chapter_no": 86,
+  "review_mode": "rewrite",
+  "score": 7.5,
+  "can_be_final": true,
+  "main_problems": [
+    "The chapter's pacing is slow, with a significant portion dedicated to detailing the Maeve family's structure and financial situation without immediate plot advancement.",
+    "The emotional impact of Eleanor Maeve's past mistreatment and her current strained relationship with her mother is present but could be amplified.",
+    "Elara Willow's internal reactions to the Maeve family's coldness and the transactional nature of their affection are described but lack the sharp, biting commentary expected from her character.",
+    "The dialogue, while functional, is somewhat expositional and lacks the underlying tension and subtext that would make it more engaging."
+  ],
+  "fix_suggestions": [
+    "Condense the description of the Maeve family's size and financial situation. Focus on the most relevant characters and their immediate impact on Eleanor and Elara.",
+    "Amplify Eleanor's internal monologue or subtle reactions to highlight her past pain and current discomfort more effectively.",
+    "Inject more of Elara Willow's sharp, modern internal voice. Her observations about the 'gifts for affection' dynamic could be more pointed and cynical.",
+    "Introduce more subtext into the dialogue. Madam Maeve's impatience and Arthur Maeve's wife's sudden warmth could be conveyed with more subtle cues rather than direct statements.",
+    "The scene where Eleanor offers gifts could be more impactful if the contrast between the family's initial coldness and their sudden warmth is sharper and more immediate."
+  ],
+  "commercial_strengths": [
+    "Establishes the background of Eleanor Maeve's family, providing crucial context for her past and her current request.",
+    "Highlights the stark contrast between the Thorne family and the Maeve family, emphasizing Eleanor's difficult upbringing.",
+    "Introduces the transactional nature of affection within the Maeve family, which Elara Willow observes with her characteristic cynicism.",
+    "Sets up a clear emotional conflict for Eleanor as she seeks help from a family that has largely mistreated her."
+  ],
+  "risk_flags": [
+    "Pacing: The chapter is slow and could bore readers accustomed to faster-paced webnovels.",
+    "Emotional Depth: While present, the emotional impact could be heightened to better resonate with the target audience.",
+    "Character Voice: Elara's internal voice, while present, could be sharper and more distinctive."
+  ],
+  "final_decision": "The chapter is usable as is for MVP, but minor revisions to pacing and emotional amplification would strengthen it. The core story elements and characterizations are consistent with the Story Bible."
+}

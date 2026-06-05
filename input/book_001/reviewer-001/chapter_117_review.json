@@ -1,0 +1,45 @@
+{
+  "chapter_no": 117,
+  "review_mode": "rewrite",
+  "score": 8.2,
+  "can_be_final": true,
+  "main_problems": [
+    "The chapter has a minor translation smell in a few phrases like 'A shiver traced its way down Elara’s spine' and 'Her good intentions had been trampled' which feel slightly unnatural for English emotional narration.",
+    "The pacing in the middle section (Elara's search in the forest) is slightly slow and could be tightened to maintain mobile-reader engagement.",
+    "The ending hook is strong but the proposal line 'I've decided I like you' feels a bit abrupt and could be more emotionally charged to maximize cliffhanger impact."
+  ],
+  "fix_suggestions": [
+    "Rephrase 'A shiver traced its way down Elara’s spine' to something more natural like 'A chill ran down Elara's spine'.",
+    "Rephrase 'Her good intentions had been trampled' to 'Her concern had been thrown back in her face' or similar.",
+    "Tighten the forest search section by reducing internal monologue and increasing sensory details to quicken pace.",
+    "Strengthen the ending line to something like 'I've decided I want you. As my husband.' to increase emotional punch and reader curiosity.",
+    "Ensure the white fox pelt gift scene has a stronger emotional beat to deepen the romantic tension before the proposal."
+  ],
+  "commercial_strengths": [
+    "Strong emotional conflict between Elara and Kaelen with a satisfying push-pull dynamic that female readers love.",
+    "Excellent use of the 'worried search' trope to demonstrate Elara's growing feelings and investment in Kaelen.",
+    "The white fox pelt gift is a powerful romantic gesture that shows Kaelen's care and provides a tangible symbol of his affection.",
+    "Elara's bold proposal at the end is a high-value emotional reversal moment that creates strong forward momentum and reader addiction.",
+    "The chapter balances humor (Elara staring at Kaelen's chest) with tension (the argument) and warmth (the gift), hitting multiple emotional notes.",
+    "Kaelen's character is consistently portrayed as gruff but caring, fitting the male lead commercial fantasy perfectly."
+  ],
+  "risk_flags": [
+    "The phrase 'mermaid line' is a modern term that may break immersion for some readers; consider replacing with 'defined muscles at his hips' or similar.",
+    "The line 'A good husband, after all, needed to be cultivated early' has a slight Chinese webnovel phrasing risk; consider localizing to 'A good husband needed to be secured early'.",
+    "Kaelen's near-slip about the Emperor ('presented it to the Empe—') is a good hint but could be made slightly clearer to ensure readers catch the foreshadowing."
+  ],
+  "final_decision": "ACCEPT WITH MINOR REVISIONS",
+  "name_consistency": "PASS",
+  "adapted_setting_consistency": "PASS",
+  "source_plot_integrity": "PASS",
+  "relationship_consistency": "PASS",
+  "translation_smell": 8.0,
+  "localization": 8.5,
+  "dialogue": 8.5,
+  "pacing": 8.0,
+  "hook": 8.5,
+  "ending": 8.5,
+  "character_consistency": 9.0,
+  "story_bible_alignment": 9.0,
+  "overall": 8.2
+}

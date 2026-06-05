@@ -1,0 +1,33 @@
+{
+  "chapter_no": 94,
+  "review_mode": "rewrite",
+  "score": 7.5,
+  "can_be_final": false,
+  "main_problems": [
+    "The chapter's pacing is too slow, with a significant portion dedicated to Briar's fall into the pigsty and her subsequent interaction with Seraphina Vance. This could be condensed.",
+    "The dialogue, while functional, lacks the sharp emotional punch expected for this genre. Briar's dramatic retelling and Seraphina's reactions feel a bit drawn out.",
+    "The 'translation smell' is present, particularly in the sentence structure and phrasing. For example, 'every fiber of her being recoiling from the stench' and 'their snorts grating on her nerves' feel slightly unnatural.",
+    "The emotional projection for the female reader could be stronger. While Briar's humiliation and Seraphina's outrage are present, they don't hit with the visceral impact needed for maximum reader engagement.",
+    "The cliffhanger strength is moderate. While the plan to divorce Eleanor Maeve is set in motion, the immediate threat or emotional urgency could be heightened."
+  ],
+  "fix_suggestions": [
+    "Condense the pigsty scene. Briar's fall and initial scream can be described more succinctly. Focus on the overheard conversation and its impact.",
+    "Sharpen the dialogue. Make Briar's accusations more pointed and Seraphina's reactions more immediate and furious. Reduce the back-and-forth about the divorce plan and focus on the emotional fallout.",
+    "Refine sentence structure and word choice to sound more natural in English. Replace slightly stilted phrases with more common, emotionally resonant language.",
+    "Amplify the emotional stakes. Emphasize Briar's fear of being a 'child of a secondary wife' and Seraphina's fury at the perceived insult to her children's status. Show, don't just tell, their desperation.",
+    "Strengthen the ending hook. Instead of just setting up the divorce plan, perhaps hint at a more immediate consequence or a direct threat to Elara and Piper, or a more dramatic confrontation."
+  ],
+  "commercial_strengths": [
+    "The chapter effectively sets up a significant conflict with the birth family, directly addressing the core conflict of the Story Bible.",
+    "Elara Willow's intelligence and strategic planning are showcased, reinforcing her role as a capable protagonist.",
+    "The humiliation of Briar Vance provides a satisfying moment of schadenfreude for readers.",
+    "The chapter clearly advances the plot by initiating the divorce proceedings against Eleanor Maeve and escalating the conflict with Seraphina Vance and Agnes Thorne.",
+    "The emotional reactions of Seraphina Vance and Briar Vance, particularly their outrage and desperation, are commercially appealing for the target audience."
+  ],
+  "risk_flags": [
+    "Potential for 'translation smell' in phrasing and sentence structure.",
+    "Pacing could be tightened to maintain reader engagement.",
+    "Emotional intensity could be amplified for greater reader projection."
+  ],
+  "final_decision": "Needs Rewrite"
+}

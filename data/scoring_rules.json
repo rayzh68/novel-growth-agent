@@ -1,0 +1,18 @@
+{
+  "appeal_diagnostics": {
+    "description": "Diagnostics for content appeal, hook appeal, creative appeal and reading appeal. Not a final business goal.",
+    "early_appeal_signal": {
+      "ctr_signal": 0.55,
+      "cpc_signal": 0.25,
+      "landing_view_signal": 0.2
+    },
+    "full_appeal_signal": {
+      "ctr_signal": 0.2,
+      "cpc_signal": 0.15,
+      "read_start_signal": 0.2,
+      "chapter_1_finish_signal": 0.2,
+      "chapter_3_finish_signal": 0.15,
+      "gate_unlock_intent_signal": 0.1
+    }
+  }
+}

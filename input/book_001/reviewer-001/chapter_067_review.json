@@ -1,0 +1,32 @@
+{
+  "chapter_no": 67,
+  "review_mode": "rewrite",
+  "score": 7.8,
+  "can_be_final": false,
+  "main_problems": [
+    "The chapter's pacing is too slow, with too much internal monologue and exposition about the divorce and village politics. The actual plot progression is minimal.",
+    "The 'cooking scene' is a weak attempt at conflict and revenge. It lacks the emotional punch and strategic depth expected from Elara Willow.",
+    "Seraphina Vance's appearance and dialogue feel forced and serve only to deliver exposition about Arthur's back and Elara's 'heavy-handedness'.",
+    "The emotional intensity is low. Eleanor's abuse is described but doesn't evoke strong reader empathy or outrage. Elara's reaction is internal and lacks immediate, impactful action.",
+    "The ending hook is weak. Agnes Thorne's anger over the rice is a petty conflict that doesn't create significant next-chapter desire."
+  ],
+  "fix_suggestions": [
+    "Condense the exposition about the divorce and village politics. Integrate it more naturally into dialogue or action.",
+    "Rework the cooking scene to be more impactful. Instead of just using white rice, Elara could subtly poison the food, sabotage a crucial ingredient, or use the cooking process to overhear a vital piece of information.",
+    "Make Seraphina Vance's appearance more threatening and manipulative. Her dialogue should reveal more about the family's internal power struggles or her own schemes.",
+    "Amplify the emotional impact of Eleanor's abuse. Show Elara's visceral reaction and immediate planning for escape, not just internal thought.",
+    "Strengthen the cliffhanger. Agnes Thorne's anger over rice is too minor. The hook should involve a more significant threat, a dangerous revelation, or a direct confrontation with higher stakes."
+  ],
+  "commercial_strengths": [
+    "The core premise of Elara Willow fighting against her abusive family and seeking independence is a strong commercial hook.",
+    "The introduction of Seraphina Vance as another antagonist adds complexity to the family conflict.",
+    "Elara's internal resolve to leave and seek revenge is a good character driver."
+  ],
+  "risk_flags": [
+    "translation_smell: The prose feels a bit stiff and expository, particularly the sections explaining village politics and the divorce process. It reads like translated text rather than natural English narrative.",
+    "pacing: The chapter is too slow, with long paragraphs of internal thought and explanation that could be cut or shown through action.",
+    "dialogue: Seraphina's dialogue is exposition-heavy and lacks natural flow.",
+    "ending: The cliffhanger is weak and doesn't create enough urgency."
+  ],
+  "final_decision": "Needs rewrite"
+}

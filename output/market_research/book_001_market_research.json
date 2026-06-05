@@ -1,0 +1,2475 @@
+{
+  "book_id": "book_001",
+  "created_at": "2026-06-04T00:35:28.264909+00:00",
+  "source_files": [
+    "output\\research\\clean\\book_001_market_research_clean.json"
+  ],
+  "analysis_method": "market_patterns_extracted_from_research_titles_snippets_meta_and_content",
+  "result_summary": {
+    "total_results": 202,
+    "top_sources": [
+      {
+        "source": "https://www.goodreads.com/book/12819342-what-happens-next/questions",
+        "count": 1
+      },
+      {
+        "source": "https://www.interviewsandreviews.com/book-reviews/what-happens-next",
+        "count": 1
+      },
+      {
+        "source": "https://podcasts.apple.com/us/podcast/what-happened-next-a-podcast-about-newish-books/id1684037464",
+        "count": 1
+      },
+      {
+        "source": "https://beckiebythebook.com/2024/02/05/mini-book-review-what-happens-next",
+        "count": 1
+      },
+      {
+        "source": "https://rosepointpublishing.com/2025/12/14/what-happened-next-by-edwin-hill-bookreview-mysteryromance",
+        "count": 1
+      },
+      {
+        "source": "https://turquoiseave.com/blog/2023/bookreview-whathappensnext",
+        "count": 1
+      },
+      {
+        "source": "https://bookclubs.com/discussion-guides/maybe-next-time-a-novel",
+        "count": 1
+      },
+      {
+        "source": "https://readerhaven.com/book-club-questions-for-discussion",
+        "count": 1
+      },
+      {
+        "source": "https://borrowreadrepeat.com/book-club-picks-2024",
+        "count": 1
+      },
+      {
+        "source": "https://www.facebook.com/groups/983616945825132/posts/1874740420046109",
+        "count": 1
+      },
+      {
+        "source": "https://cartoonist.coop/journal/read-before-you-follow-the-web-is-what-happens-nexts-most-dynamic-tool",
+        "count": 1
+      },
+      {
+        "source": "https://thepulparchivist.substack.com/p/the-rise-of-the-web-novel",
+        "count": 1
+      },
+      {
+        "source": "https://medium.com/@e.ardincaple/whats-a-web-novel-and-why-should-you-be-excited-about-them-1181ae02be3b",
+        "count": 1
+      },
+      {
+        "source": "https://www.youtube.com/watch?v=MlsgHbhHeuk",
+        "count": 1
+      },
+      {
+        "source": "https://www.reddit.com/r/books/comments/11i9z8z/disc_why_do_webnovel_get_a_smaller_range_of",
+        "count": 1
+      },
+      {
+        "source": "https://www.publishersweekly.com/pw/by-topic/industry-news/comics/article/81073-webtoon-builds-an-audience-for-webcomics",
+        "count": 1
+      },
+      {
+        "source": "https://forums.tapas.io/t/pros-cons-audiences-of-every-writing-webnovel-site-a-continual-discussion/86059",
+        "count": 1
+      },
+      {
+        "source": "https://www.quora.com/What-kind-of-people-put-stories-on-Webnovel-and-what-kind-of-stories-do-you-write",
+        "count": 1
+      },
+      {
+        "source": "https://www.royalroad.com/forums/post/1190633",
+        "count": 1
+      },
+      {
+        "source": "https://writersofthefuture.com/forum/publishing-the-business-of/my-sci-fi-story-exploded-and-is-1-trending-on-royal-road",
+        "count": 1
+      }
+    ],
+    "top_queries": [
+      {
+        "query": "happens next reader discussion",
+        "count": 12
+      },
+      {
+        "query": "happens next web novel audience",
+        "count": 12
+      },
+      {
+        "query": "absolutely delivered reader discussion",
+        "count": 12
+      },
+      {
+        "query": "incredibly addictive reader discussion",
+        "count": 12
+      },
+      {
+        "query": "incredibly satisfying reader discussion",
+        "count": 12
+      },
+      {
+        "query": "chef kiss reader discussion",
+        "count": 12
+      },
+      {
+        "query": "surge anger reader discussion",
+        "count": 12
+      },
+      {
+        "query": "happens next online fiction audience",
+        "count": 11
+      },
+      {
+        "query": "absolutely perfect reader discussion",
+        "count": 11
+      },
+      {
+        "query": "chef kiss web novel audience",
+        "count": 11
+      },
+      {
+        "query": "absolutely delivered online fiction audience",
+        "count": 10
+      },
+      {
+        "query": "absolutely perfect online fiction audience",
+        "count": 10
+      },
+      {
+        "query": "incredibly addictive web novel audience",
+        "count": 10
+      },
+      {
+        "query": "absolutely delivered web novel audience",
+        "count": 9
+      },
+      {
+        "query": "absolutely perfect web novel audience",
+        "count": 9
+      },
+      {
+        "query": "incredibly satisfying online fiction audience",
+        "count": 9
+      },
+      {
+        "query": "incredibly addictive online fiction audience",
+        "count": 8
+      },
+      {
+        "query": "incredibly satisfying web novel audience",
+        "count": 8
+      },
+      {
+        "query": "chef kiss online fiction audience",
+        "count": 7
+      },
+      {
+        "query": "surge anger web novel audience",
+        "count": 5
+      }
+    ],
+    "sample_titles": [
+      "[MOCK] Facebook ad angle for happens next reader discussion",
+      "[MOCK] Facebook ad angle for happens next web novel audience",
+      "[MOCK] Facebook ad angle for happens next online fiction audience",
+      "[MOCK] Facebook ad angle for absolutely delivered reader discussion",
+      "[MOCK] Facebook ad angle for absolutely delivered web novel audience",
+      "[MOCK] Facebook ad angle for absolutely delivered online fiction audience",
+      "[MOCK] Facebook ad angle for absolutely perfect reader discussion",
+      "[MOCK] Facebook ad angle for absolutely perfect web novel audience",
+      "[MOCK] Facebook ad angle for absolutely perfect online fiction audience",
+      "[MOCK] Facebook ad angle for incredibly addictive reader discussion",
+      "[MOCK] Facebook ad angle for incredibly addictive web novel audience",
+      "[MOCK] Facebook ad angle for incredibly addictive online fiction audience",
+      "[MOCK] Facebook ad angle for incredibly satisfying reader discussion",
+      "[MOCK] Facebook ad angle for incredibly satisfying web novel audience",
+      "[MOCK] Facebook ad angle for incredibly satisfying online fiction audience",
+      "[MOCK] Facebook ad angle for chef kiss reader discussion",
+      "[MOCK] Facebook ad angle for chef kiss web novel audience",
+      "[MOCK] Facebook ad angle for chef kiss online fiction audience",
+      "[MOCK] Facebook ad angle for surge anger reader discussion",
+      "[MOCK] Facebook ad angle for surge anger web novel audience"
+    ]
+  },
+  "market_patterns": [
+    {
+      "pattern": "chef's kiss",
+      "phrase": "chef's kiss",
+      "name": "chef's kiss",
+      "label": "chef's kiss",
+      "score": 422,
+      "result_count": 18,
+      "occurrence_count": 166,
+      "title_hits": 16,
+      "snippet_hits": 14,
+      "meta_hits": 30,
+      "content_hits": 0,
+      "matched_queries": [
+        "chef kiss reader discussion",
+        "chef kiss web novel audience",
+        "chef kiss online fiction audience"
+      ],
+      "evidence": [
+        {
+          "title": "Chef's Kiss – Oni Press",
+          "snippet": "# Chef's Kiss. Now that college is over, English graduate Ben Cook is on the job hunt looking for something…anything…related to his passion for reading and writing. It turns out he doesn’t even have enough experience to be a garbage collector! But when Ben stumbles upon a “Now Hiring—No Experience Necessary” sign outside a restaurant, he jumps at the chance to land his first job. He’s actually not so bad in the kitchen, but he will have to pass a series of cooking tests to prove he’s got the cul",
+          "url": "https://oni-press.myshopify.com/products/chefs-kiss-pre-order",
+          "source": "",
+          "query": "chef kiss reader discussion"
+        },
+        {
+          "title": "Chef's Kiss by Jarrett Melendez - Goodreads",
+          "snippet": "This book has everything that I want: queer characters, a cute romance, and food. It also has these great discussions surrounding familial",
+          "url": "https://www.goodreads.com/book/show/58437862-chef-s-kiss",
+          "source": "",
+          "query": "chef kiss reader discussion"
+        },
+        {
+          "title": "Chef's Kiss by T.J. Alexander: Bon Appetit inspired Romance - Reddit",
+          "snippet": "The main characters are based on Claire and Brad from the BA Test Kitchen. I used to watch BA religiously until the infamous scandal of 2020.",
+          "url": "https://www.reddit.com/r/RomanceBooks/comments/uox13a/chefs_kiss_by_tj_alexander_bon_appetit_inspired",
+          "source": "",
+          "query": "chef kiss reader discussion"
+        },
+        {
+          "title": "Review of Chef's Kiss (9781620109045) — Foreword Reviews",
+          "snippet": "# Chef's Kiss. A young man is drawn to the culinary arts and a coworker in the romantic graphic novel *Chef’s Kiss*. In need of money, he takes a job at a restaurant whose demanding chef presents a new cooking challenge each week. Ben begins to enjoy the job—in large part because of his attraction to a fellow employee, Liam. When Ben’s father arranges a job at a literary magazine, Ben is faced with a difficult choice: between writing and his parents’ approval on one side, and his new loves, cook",
+          "url": "https://www.forewordreviews.com/reviews/chefs-kiss",
+          "source": "",
+          "query": "chef kiss reader discussion"
+        },
+        {
+          "title": "Guest Review: Chef’s Kiss by TJ Alexander – Escape Reality, Read Fiction!",
+          "snippet": "# Guest Review: Chef’s Kiss by TJ Alexander. Guest Review: Chef’s Kiss by TJ Alexander**Chef's Kiss (Chef's Kiss, #1)** by T.J. Alexander. > **A high-strung pastry chef’s professional goals are interrupted by an unexpected career transition and the introduction of her wildly attractive nonbinary kitchen manager in this deliciously fresh and witty queer rom-com.**. All she wants to do is create the perfect loaf of sourdough and develop recipes, but when The Discerning Chef decides to bring their ",
+          "url": "https://www.readingreality.net/2023/06/guest-review-chefs-kiss-by-tj-alexander",
+          "source": "",
+          "query": "chef kiss reader discussion"
+        }
+      ]
+    },
+    {
+      "pattern": "chef kiss",
+      "phrase": "chef kiss",
+      "name": "chef kiss",
+      "label": "chef kiss",
+      "score": 388,
+      "result_count": 16,
+      "occurrence_count": 154,
+      "title_hits": 11,
+      "snippet_hits": 20,
+      "meta_hits": 25,
+      "content_hits": 0,
+      "matched_queries": [
+        "chef kiss web novel audience",
+        "chef kiss reader discussion",
+        "chef kiss online fiction audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Facebook ad angle for chef kiss reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "chef kiss reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for chef kiss web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "chef kiss web novel audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for chef kiss online fiction audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "chef kiss online fiction audience"
+        },
+        {
+          "title": "Chef's Kiss – Oni Press",
+          "snippet": "# Chef's Kiss. Now that college is over, English graduate Ben Cook is on the job hunt looking for something…anything…related to his passion for reading and writing. It turns out he doesn’t even have enough experience to be a garbage collector! But when Ben stumbles upon a “Now Hiring—No Experience Necessary” sign outside a restaurant, he jumps at the chance to land his first job. He’s actually not so bad in the kitchen, but he will have to pass a series of cooking tests to prove he’s got the cul",
+          "url": "https://oni-press.myshopify.com/products/chefs-kiss-pre-order",
+          "source": "",
+          "query": "chef kiss reader discussion"
+        },
+        {
+          "title": "[PDF] READING GROUP GUIDE - Simon & Schuster Publishing",
+          "snippet": "READING GROUP GUIDE “A luscious dessert of a novel.” —CAMILLE PERRI, author of When Katie Met Cassidy This reading group guide for Chef’s Kiss includes an introduction, discussion questions, ideas for enhancing your book club, and a Q&A with author TJ Alexander. All she wants to do is create the perfect loaf of sourdough and develop recipes, but when The Discerning Chef decides to bring their brand into the twenty‑first century by pivoting to video, Simone is thrust into the spotlight and finds ",
+          "url": "https://www.simonandschusterpublishing.com/downloadables/87812_ChefsKiss_RGG.pdf",
+          "source": "",
+          "query": "chef kiss reader discussion"
+        }
+      ]
+    },
+    {
+      "pattern": "happens next",
+      "phrase": "happens next",
+      "name": "happens next",
+      "label": "happens next",
+      "score": 278,
+      "result_count": 12,
+      "occurrence_count": 109,
+      "title_hits": 11,
+      "snippet_hits": 11,
+      "meta_hits": 16,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "incredibly addictive reader discussion"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Facebook ad angle for happens next reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next online fiction audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "What Happens Next — Reader Q&A",
+          "snippet": "# Questions About What Happens Next. To ask other readers questions about What Happens Next, please sign up. Will you write a second book? This novel was amazing and I can't stand the fact that I finished it. I want more a lot more and I really hope that you will write a second book. I have written several other books since then (not sequels, but new stories altogether) but…moreAw, I just saw this, Abby. JennaOtterReads It does have a lot going on, but the author does a really good job of introd",
+          "url": "https://www.goodreads.com/book/12819342-what-happens-next/questions",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "What Happens Next - interviews & reviews",
+          "snippet": "Nelson is a wonderful storyteller who keeps the reader engaged. Like her other novels, this is a standalone read. Despite being from a",
+          "url": "https://www.interviewsandreviews.com/book-reviews/what-happens-next",
+          "source": "",
+          "query": "happens next reader discussion"
+        }
+      ]
+    },
+    {
+      "pattern": "betrayed abandoned",
+      "phrase": "betrayed abandoned",
+      "name": "betrayed abandoned",
+      "label": "betrayed abandoned",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Facebook ad angle for happens next reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next online fiction audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "abandoned underestimated",
+      "phrase": "abandoned underestimated",
+      "name": "abandoned underestimated",
+      "label": "abandoned underestimated",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Facebook ad angle for happens next reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next online fiction audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "underestimated returns",
+      "phrase": "underestimated returns",
+      "name": "underestimated returns",
+      "label": "underestimated returns",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Facebook ad angle for happens next reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next online fiction audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "returns stronger",
+      "phrase": "returns stronger",
+      "name": "returns stronger",
+      "label": "returns stronger",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Facebook ad angle for happens next reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next online fiction audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "stronger ever",
+      "phrase": "stronger ever",
+      "name": "stronger ever",
+      "label": "stronger ever",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Facebook ad angle for happens next reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next online fiction audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "betrayed abandoned underestimated",
+      "phrase": "betrayed abandoned underestimated",
+      "name": "betrayed abandoned underestimated",
+      "label": "betrayed abandoned underestimated",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Facebook ad angle for happens next reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next online fiction audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "abandoned underestimated returns",
+      "phrase": "abandoned underestimated returns",
+      "name": "abandoned underestimated returns",
+      "label": "abandoned underestimated returns",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Facebook ad angle for happens next reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next online fiction audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "underestimated returns stronger",
+      "phrase": "underestimated returns stronger",
+      "name": "underestimated returns stronger",
+      "label": "underestimated returns stronger",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Facebook ad angle for happens next reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next online fiction audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "returns stronger ever",
+      "phrase": "returns stronger ever",
+      "name": "returns stronger ever",
+      "label": "returns stronger ever",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Facebook ad angle for happens next reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next online fiction audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "betrayed abandoned underestimated returns",
+      "phrase": "betrayed abandoned underestimated returns",
+      "name": "betrayed abandoned underestimated returns",
+      "label": "betrayed abandoned underestimated returns",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Facebook ad angle for happens next reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next online fiction audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "abandoned underestimated returns stronger",
+      "phrase": "abandoned underestimated returns stronger",
+      "name": "abandoned underestimated returns stronger",
+      "label": "abandoned underestimated returns stronger",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Facebook ad angle for happens next reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next online fiction audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "underestimated returns stronger ever",
+      "phrase": "underestimated returns stronger ever",
+      "name": "underestimated returns stronger ever",
+      "label": "underestimated returns stronger ever",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Facebook ad angle for happens next reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for happens next online fiction audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered reader discussion",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Facebook ad angle for absolutely delivered web novel audience",
+          "snippet": "She was betrayed, abandoned, and underestimated. Now she returns stronger than ever.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "mention love",
+      "phrase": "mention love",
+      "name": "mention love",
+      "label": "mention love",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "love hate",
+      "phrase": "love hate",
+      "name": "love hate",
+      "label": "love hate",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "hate recommend",
+      "phrase": "hate recommend",
+      "name": "hate recommend",
+      "label": "hate recommend",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "recommend abandon",
+      "phrase": "recommend abandon",
+      "name": "recommend abandon",
+      "label": "recommend abandon",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "mention love hate",
+      "phrase": "mention love hate",
+      "name": "mention love hate",
+      "label": "mention love hate",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "love hate recommend",
+      "phrase": "love hate recommend",
+      "name": "love hate recommend",
+      "label": "love hate recommend",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "hate recommend abandon",
+      "phrase": "hate recommend abandon",
+      "name": "hate recommend abandon",
+      "label": "hate recommend abandon",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "mention love hate recommend",
+      "phrase": "mention love hate recommend",
+      "name": "mention love hate recommend",
+      "label": "mention love hate recommend",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "love hate recommend abandon",
+      "phrase": "love hate recommend abandon",
+      "name": "love hate recommend abandon",
+      "label": "love hate recommend abandon",
+      "score": 220,
+      "result_count": 20,
+      "occurrence_count": 60,
+      "title_hits": 0,
+      "snippet_hits": 20,
+      "meta_hits": 0,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "strong female",
+      "phrase": "strong female",
+      "name": "strong female",
+      "label": "strong female",
+      "score": 195,
+      "result_count": 21,
+      "occurrence_count": 45,
+      "title_hits": 0,
+      "snippet_hits": 1,
+      "meta_hits": 21,
+      "content_hits": 0,
+      "matched_queries": [
+        "incredibly satisfying web novel audience",
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion"
+      ],
+      "evidence": [
+        {
+          "title": "What Webnovels would you recommend? - Quora",
+          "snippet": "My recommendation would be you should definitely read it once Our glorious time ( novelfull)— this one has strong male lead and strong female",
+          "url": "https://www.quora.com/What-Webnovels-would-you-recommend",
+          "source": "",
+          "query": "incredibly satisfying web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        }
+      ]
+    },
+    {
+      "pattern": "tj alexander",
+      "phrase": "tj alexander",
+      "name": "tj alexander",
+      "label": "tj alexander",
+      "score": 195,
+      "result_count": 7,
+      "occurrence_count": 80,
+      "title_hits": 5,
+      "snippet_hits": 10,
+      "meta_hits": 15,
+      "content_hits": 0,
+      "matched_queries": [
+        "chef kiss reader discussion",
+        "chef kiss online fiction audience",
+        "chef kiss web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[PDF] READING GROUP GUIDE - Simon & Schuster Publishing",
+          "snippet": "READING GROUP GUIDE “A luscious dessert of a novel.” —CAMILLE PERRI, author of When Katie Met Cassidy This reading group guide for Chef’s Kiss includes an introduction, discussion questions, ideas for enhancing your book club, and a Q&A with author TJ Alexander. All she wants to do is create the perfect loaf of sourdough and develop recipes, but when The Discerning Chef decides to bring their brand into the twenty‑first century by pivoting to video, Simone is thrust into the spotlight and finds ",
+          "url": "https://www.simonandschusterpublishing.com/downloadables/87812_ChefsKiss_RGG.pdf",
+          "source": "",
+          "query": "chef kiss reader discussion"
+        },
+        {
+          "title": "Guest Review: Chef’s Kiss by TJ Alexander – Escape Reality, Read Fiction!",
+          "snippet": "# Guest Review: Chef’s Kiss by TJ Alexander. Guest Review: Chef’s Kiss by TJ Alexander**Chef's Kiss (Chef's Kiss, #1)** by T.J. Alexander. > **A high-strung pastry chef’s professional goals are interrupted by an unexpected career transition and the introduction of her wildly attractive nonbinary kitchen manager in this deliciously fresh and witty queer rom-com.**. All she wants to do is create the perfect loaf of sourdough and develop recipes, but when The Discerning Chef decides to bring their ",
+          "url": "https://www.readingreality.net/2023/06/guest-review-chefs-kiss-by-tj-alexander",
+          "source": "",
+          "query": "chef kiss reader discussion"
+        },
+        {
+          "title": "Chef's Kiss | Book by TJ Alexander - Simon & Schuster",
+          "snippet": "A high-strung pastry chef's professional goals are interrupted by an unexpected career transition and the introduction of her wildly attractive nonbinary",
+          "url": "https://www.simonandschuster.com/books/Chefs-Kiss/TJ-Alexander/Chefs-Kiss/9781982189082",
+          "source": "",
+          "query": "chef kiss reader discussion"
+        },
+        {
+          "title": "Chef's Kiss by TJ Alexander : All About Romance",
+          "snippet": "## Chef’s Kiss. **Chef’s Kiss** understands what joy cooking can bring, and it brings it to life through a union between grumpy and sunshine, that universally appealing combo. Highly-strung Simone Larkspur is a busy pastry chef who lands her dream job in the test kitchen of a cookbook/magazine publisher called ***The Discerning Chef***. Naturally, their bosses take note of Ray’s success and decide to add Ray to Simone’s the program to smooth over her rough edges. The prose here is really delight",
+          "url": "https://allaboutromance.com/book-review/chefs-kiss-by-tj-alexander",
+          "source": "",
+          "query": "chef kiss web novel audience"
+        },
+        {
+          "title": "Chef’s Kiss: Deliciously Romantic – Life Meets Literature",
+          "snippet": "The Handmaid's Tale Reviews Chef’s Kiss: Deliciously Romantic. # Chef’s Kiss: Deliciously Romantic. ## Review: *Chef’s Kiss* by TJ Alexander. If you are like me, or just a foodie in general, you are going to want to pick up this adorable queer romcom by TJ Alexander! *Chef’s Kiss* publishes on Tuesday May 3, 2022 from Atria Books! All she wants to do is create the perfect loaf of sourdough and develop recipes, but when The Discerning Chef decides to bring their brand into the 21st century by piv",
+          "url": "https://lifemeetsliterature.com/chefs-kiss-deliciously-romantic",
+          "source": "",
+          "query": "chef kiss web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "nationalcentreforwriting org",
+      "phrase": "nationalcentreforwriting org",
+      "name": "nationalcentreforwriting org",
+      "label": "nationalcentreforwriting org",
+      "score": 195,
+      "result_count": 1,
+      "occurrence_count": 95,
+      "title_hits": 0,
+      "snippet_hits": 19,
+      "meta_hits": 19,
+      "content_hits": 0,
+      "matched_queries": [
+        "incredibly satisfying online fiction audience"
+      ],
+      "evidence": [
+        {
+          "title": "How to write a short story | National Centre for Writing | NCW",
+          "snippet": "[Skip to content](https://nationalcentreforwriting.org.uk/writing-hub/how-to-write-a-short-story-2#content). [](https://nationalcentreforwriting.org.uk/writing-hub/how-to-write-a-short-story-2#mobile-navigation). [SUPPORT NCW![Image 4: Arrow](https://nationalcentreforwriting.org.uk/wp-content/themes/ncw/images/support_us_arrow.svg)](https://nationalcentreforwriting.org.uk/writing-hub/how-to-write-a-short-story-2#). [![Image 5: X Close Icon](https://nationalcentreforwriting.org.uk/wp-content/them",
+          "url": "https://nationalcentreforwriting.org.uk/writing-hub/how-to-write-a-short-story-2",
+          "source": "",
+          "query": "incredibly satisfying online fiction audience"
+        }
+      ]
+    },
+    {
+      "pattern": "org uk",
+      "phrase": "org uk",
+      "name": "org uk",
+      "label": "org uk",
+      "score": 195,
+      "result_count": 1,
+      "occurrence_count": 95,
+      "title_hits": 0,
+      "snippet_hits": 19,
+      "meta_hits": 19,
+      "content_hits": 0,
+      "matched_queries": [
+        "incredibly satisfying online fiction audience"
+      ],
+      "evidence": [
+        {
+          "title": "How to write a short story | National Centre for Writing | NCW",
+          "snippet": "[Skip to content](https://nationalcentreforwriting.org.uk/writing-hub/how-to-write-a-short-story-2#content). [](https://nationalcentreforwriting.org.uk/writing-hub/how-to-write-a-short-story-2#mobile-navigation). [SUPPORT NCW![Image 4: Arrow](https://nationalcentreforwriting.org.uk/wp-content/themes/ncw/images/support_us_arrow.svg)](https://nationalcentreforwriting.org.uk/writing-hub/how-to-write-a-short-story-2#). [![Image 5: X Close Icon](https://nationalcentreforwriting.org.uk/wp-content/them",
+          "url": "https://nationalcentreforwriting.org.uk/writing-hub/how-to-write-a-short-story-2",
+          "source": "",
+          "query": "incredibly satisfying online fiction audience"
+        }
+      ]
+    },
+    {
+      "pattern": "nationalcentreforwriting org uk",
+      "phrase": "nationalcentreforwriting org uk",
+      "name": "nationalcentreforwriting org uk",
+      "label": "nationalcentreforwriting org uk",
+      "score": 195,
+      "result_count": 1,
+      "occurrence_count": 95,
+      "title_hits": 0,
+      "snippet_hits": 19,
+      "meta_hits": 19,
+      "content_hits": 0,
+      "matched_queries": [
+        "incredibly satisfying online fiction audience"
+      ],
+      "evidence": [
+        {
+          "title": "How to write a short story | National Centre for Writing | NCW",
+          "snippet": "[Skip to content](https://nationalcentreforwriting.org.uk/writing-hub/how-to-write-a-short-story-2#content). [](https://nationalcentreforwriting.org.uk/writing-hub/how-to-write-a-short-story-2#mobile-navigation). [SUPPORT NCW![Image 4: Arrow](https://nationalcentreforwriting.org.uk/wp-content/themes/ncw/images/support_us_arrow.svg)](https://nationalcentreforwriting.org.uk/writing-hub/how-to-write-a-short-story-2#). [![Image 5: X Close Icon](https://nationalcentreforwriting.org.uk/wp-content/them",
+          "url": "https://nationalcentreforwriting.org.uk/writing-hub/how-to-write-a-short-story-2",
+          "source": "",
+          "query": "incredibly satisfying online fiction audience"
+        }
+      ]
+    },
+    {
+      "pattern": "love revenge",
+      "phrase": "love revenge",
+      "name": "love revenge",
+      "label": "love revenge",
+      "score": 180,
+      "result_count": 20,
+      "occurrence_count": 40,
+      "title_hits": 0,
+      "snippet_hits": 0,
+      "meta_hits": 20,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "revenge arcs",
+      "phrase": "revenge arcs",
+      "name": "revenge arcs",
+      "label": "revenge arcs",
+      "score": 180,
+      "result_count": 20,
+      "occurrence_count": 40,
+      "title_hits": 0,
+      "snippet_hits": 0,
+      "meta_hits": 20,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "arcs heroine",
+      "phrase": "arcs heroine",
+      "name": "arcs heroine",
+      "label": "arcs heroine",
+      "score": 180,
+      "result_count": 20,
+      "occurrence_count": 40,
+      "title_hits": 0,
+      "snippet_hits": 0,
+      "meta_hits": 20,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "heroine actually",
+      "phrase": "heroine actually",
+      "name": "heroine actually",
+      "label": "heroine actually",
+      "score": 180,
+      "result_count": 20,
+      "occurrence_count": 40,
+      "title_hits": 0,
+      "snippet_hits": 0,
+      "meta_hits": 20,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "actually wins",
+      "phrase": "actually wins",
+      "name": "actually wins",
+      "label": "actually wins",
+      "score": 180,
+      "result_count": 20,
+      "occurrence_count": 40,
+      "title_hits": 0,
+      "snippet_hits": 0,
+      "meta_hits": 20,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "wins strong",
+      "phrase": "wins strong",
+      "name": "wins strong",
+      "label": "wins strong",
+      "score": 180,
+      "result_count": 20,
+      "occurrence_count": 40,
+      "title_hits": 0,
+      "snippet_hits": 0,
+      "meta_hits": 20,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "female leads",
+      "phrase": "female leads",
+      "name": "female leads",
+      "label": "female leads",
+      "score": 180,
+      "result_count": 20,
+      "occurrence_count": 40,
+      "title_hits": 0,
+      "snippet_hits": 0,
+      "meta_hits": 20,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "leads work",
+      "phrase": "leads work",
+      "name": "leads work",
+      "label": "leads work",
+      "score": 180,
+      "result_count": 20,
+      "occurrence_count": 40,
+      "title_hits": 0,
+      "snippet_hits": 0,
+      "meta_hits": 20,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "work best",
+      "phrase": "work best",
+      "name": "work best",
+      "label": "work best",
+      "score": 180,
+      "result_count": 20,
+      "occurrence_count": 40,
+      "title_hits": 0,
+      "snippet_hits": 0,
+      "meta_hits": 20,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "best emotional",
+      "phrase": "best emotional",
+      "name": "best emotional",
+      "label": "best emotional",
+      "score": 180,
+      "result_count": 20,
+      "occurrence_count": 40,
+      "title_hits": 0,
+      "snippet_hits": 0,
+      "meta_hits": 20,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    },
+    {
+      "pattern": "emotional stakes",
+      "phrase": "emotional stakes",
+      "name": "emotional stakes",
+      "label": "emotional stakes",
+      "score": 180,
+      "result_count": 20,
+      "occurrence_count": 40,
+      "title_hits": 0,
+      "snippet_hits": 0,
+      "meta_hits": 20,
+      "content_hits": 0,
+      "matched_queries": [
+        "happens next reader discussion",
+        "happens next web novel audience",
+        "happens next online fiction audience",
+        "absolutely delivered reader discussion",
+        "absolutely delivered web novel audience",
+        "absolutely delivered online fiction audience",
+        "absolutely perfect reader discussion",
+        "absolutely perfect web novel audience"
+      ],
+      "evidence": [
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next web novel audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for happens next online fiction audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "happens next online fiction audience"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered reader discussion",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered reader discussion"
+        },
+        {
+          "title": "[MOCK] Reddit reader discussion for absolutely delivered web novel audience",
+          "snippet": "Mock Reddit discussion: readers mention what they love, hate, recommend, and abandon.",
+          "url": "",
+          "source": "",
+          "query": "absolutely delivered web novel audience"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "chapter_no": 115,
+  "review_mode": "rewrite",
+  "score": 7.8,
+  "can_be_final": false,
+  "main_problems": [
+    "The chapter lacks forward momentum and a strong cliffhanger. It ends on a planning note (Seraphina deciding to find Gareth a wife) which is not emotionally urgent or addictive for a mobile-fiction reader.",
+    "The emotional intensity is moderate. The domestic squabbling is well-drawn but does not escalate into a high-stakes conflict or a satisfying emotional reversal for the reader.",
+    "The pacing is slow for a commercial chapter. The internal monologues and descriptions of chores, while character-building, do not create the rapid emotional movement required for Dreame/GoodNovel serials.",
+    "The chapter does not feature the female lead, Elara Willow, which is a significant commercial risk. The reader's primary emotional investment is in her journey, and a chapter without her can cause retention drops.",
+    "The ending hook is weak. Seraphina's plan to find a wife for Gareth is a setup for future conflict, not an immediate, compelling reason to read the next chapter."
+  ],
+  "fix_suggestions": [
+    "Inject a stronger cliffhanger. End the chapter with a direct threat or a piece of information that creates immediate urgency. For example, have Seraphina overhear a rumor about Elara Willow's new business success that enrages her, or have Arthur reveal a plan to directly sabotage Elara.",
+    "Increase the emotional stakes. Show the Thorne family's desperation more acutely. Perhaps Agnes discovers they are nearly out of money, or Arthur reveals he has lost his job. This would create a more pressing conflict.",
+    "Tighten the pacing. Cut redundant descriptions of chores and internal complaints. Focus on the most emotionally charged exchanges and move the scene toward a crisis point.",
+    "If possible, include a brief scene or mention of Elara Willow's contrasting success. A single paragraph showing her thriving would heighten the reader's satisfaction and create a powerful contrast with the Thorne family's misery.",
+    "End with a direct action or decision that has immediate consequences. For example, Seraphina could decide to visit her father to borrow money, setting up a new conflict, or Agnes could decide to confront Elara Willow directly."
+  ],
+  "commercial_strengths": [
+    "The chapter effectively portrays the Thorne family's internal decay and misery, which serves as satisfying 'justice porn' for the reader who remembers their abuse of Elara.",
+    "The dialogue is natural and emotionally charged, revealing the power dynamics and resentments within the family.",
+    "The character voices are distinct: Agnes's bitter entitlement, Seraphina's cunning manipulation, Briar's spoiled whining, and Arthur's weak-willed frustration are all clear.",
+    "The chapter successfully shows the consequences of Elara's departure, fulfilling the commercial promise of vindication.",
+    "The localized English is smooth and natural, with no obvious translation smell."
+  ],
+  "risk_flags": [
+    "No Elara Willow presence. This is a high-risk chapter for reader retention on a serialized platform.",
+    "Weak cliffhanger. The ending does not create a strong desire to read the next chapter.",
+    "Slow pacing. The chapter is heavy on domestic detail and light on plot progression or emotional escalation.",
+    "The chapter resolves no immediate conflict; it merely sets up a future plan, which can feel unsatisfying."
+  ],
+  "final_decision": "Revise. The chapter has strong character work and delivers on the 'justice porn' promise, but it lacks the commercial pacing and cliffhanger strength required for a final production chapter. It needs a stronger ending hook and tighter pacing to be commercially viable."
+}

@@ -1,0 +1,30 @@
+{
+  "chapter_no": 119,
+  "review_mode": "rewrite",
+  "score": 8.5,
+  "can_be_final": true,
+  "main_problems": [
+    "Minor: The chapter uses 'Silas Thorne' for the village scholar, but the Story Bible locks his name as 'Ethan Hayes'. This is a name drift error.",
+    "Minor: The chapter uses 'Madam Lu' for the ghost, but the Story Bible locks the ghost's name as 'Madam Lucius'. This is a name drift error.",
+    "Minor: The chapter uses 'Thorne family' to refer to the paternal family, but the Story Bible locks the family name as 'The Thorne Family'. This is consistent, but the specific character 'Silas Thorne' is incorrect."
+  ],
+  "fix_suggestions": [
+    "Replace 'Silas Thorne' with 'Ethan Hayes' throughout the chapter.",
+    "Replace 'Madam Lu' with 'Madam Lucius' throughout the chapter.",
+    "Ensure all other character names (Elara Willow, Piper Rose, Eleanor Maeve, Arthur Blackwood, Kaelen Sterling, Agnes Thorne, Seraphina Vance) are correctly used as per the Story Bible."
+  ],
+  "commercial_strengths": [
+    "Strong emotional conflict between Elara and her mother about marriage choices, creating reader investment.",
+    "Excellent use of the 'ghost house' superstition as a strategic tool, showcasing Elara's intelligence and resourcefulness.",
+    "High emotional intensity in the confrontation with Arthur Blackwood, with clear power dynamics and satisfying resolution.",
+    "Strong female-reader projection: Elara's defiance, her protection of her family, and her clever manipulation of the situation are highly appealing.",
+    "Effective cliffhanger with Arthur Blackwood's illness and the Thorne family's fear, creating forward momentum.",
+    "Natural English dialogue that feels emotionally believable and reveals character relationships.",
+    "Good pacing with emotional movement in every scene."
+  ],
+  "risk_flags": [
+    "Name drift: 'Silas Thorne' instead of 'Ethan Hayes'.",
+    "Name drift: 'Madam Lu' instead of 'Madam Lucius'."
+  ],
+  "final_decision": "Accept after fixing name drift issues. The chapter is commercially strong, emotionally engaging, and well-paced. The two name errors are easily correctable and do not undermine the overall quality."
+}

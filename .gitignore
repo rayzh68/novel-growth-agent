@@ -1,0 +1,17 @@
+﻿.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.env
+.env.*
+
+output/research/raw/*.json
+output/research/clean/*.json
+
+_archive_before_rebuild_*/
+archive/
+
+.DS_Store
+Thumbs.db

@@ -1,0 +1,29 @@
+{
+  "chapter_no": 112,
+  "review_mode": "rewrite",
+  "score": 8.2,
+  "can_be_final": true,
+  "main_problems": [
+    "The chapter ends on a cliffhanger with an unfamiliar man at Kaelen's cottage, but the emotional setup for this reveal is weak. The reader has no prior context for who this man might be, so the shock feels unearned and slightly confusing.",
+    "The pacing in the middle section (Agnes Thorne's rant) is slightly bloated. The rant goes on for several paragraphs without advancing plot or character insight beyond what is already known.",
+    "The dialogue between Elara and Master Thorne about the stall sale is natural but slightly repetitive. The negotiation could be tightened to maintain momentum."
+  ],
+  "fix_suggestions": [
+    "Tighten Agnes Thorne's rant to 2-3 paragraphs max. Cut redundant curses and focus on her jealousy and fear of losing control.",
+    "Add a brief internal thought from Elara before she reaches Kaelen's cottage to hint at her unease or a sense of foreboding, making the cliffhanger more resonant.",
+    "Consider trimming the wonton negotiation by one exchange to keep the pacing snappy and the emotional focus on Elara's determination."
+  ],
+  "commercial_strengths": [
+    "Strong female lead agency: Elara actively pursues a business opportunity, demonstrating resourcefulness and ambition.",
+    "Emotional conflict with mother: Eleanor Maeve's hesitation about women in business creates relatable tension and is resolved through Elara's persuasive reasoning.",
+    "Clear forward momentum: The stall purchase sets up a concrete business arc, giving readers a tangible goal to root for.",
+    "Cliffhanger ending: The mysterious man at Kaelen's door creates curiosity and urgency to read the next chapter.",
+    "Family bonding: The warm scene between Elara, Piper, and Eleanor Maeve provides emotional payoff and reinforces the chosen family theme."
+  ],
+  "risk_flags": [
+    "The name 'Master Thorne' may cause confusion with the Thorne family antagonists. Ensure readers can distinguish this is a different character (the wonton seller).",
+    "The phrase 'white-eyed wolf' is a Chinese idiom that may not translate naturally. Consider replacing with a more English-idiomatic insult like 'ungrateful snake' or 'backstabber'.",
+    "The term 'hussy' is used multiple times by Agnes Thorne. While period-appropriate, ensure it doesn't feel repetitive or jarring to modern readers."
+  ],
+  "final_decision": "Accept with minor revisions. The chapter is commercially strong, emotionally engaging, and aligns well with the Story Bible. The cliffhanger is effective but could be strengthened with a hint of foreboding. Tighten the antagonist rant and polish a few localized phrases for maximum readability."
+}

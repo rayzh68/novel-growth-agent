@@ -1,0 +1,18 @@
+{
+  "betrayal": [
+    "They called her {label}. They forgot she was the only one who could save them.",
+    "Everyone she trusted betrayed her. Now they need her back."
+  ],
+  "revenge": [
+    "They tried to bury her. She came back with a crown.",
+    "The empire destroyed her life. Now she is returning for the throne."
+  ],
+  "hidden_identity": [
+    "No one knew who she really was until it was too late.",
+    "She hid her power to survive. Now the truth will break the kingdom."
+  ],
+  "romantic_tension": [
+    "He was ordered to destroy her. He never expected to fall for her.",
+    "The one man she should hate became the only one who could protect her."
+  ]
+}

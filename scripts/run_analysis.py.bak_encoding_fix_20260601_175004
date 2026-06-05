@@ -1,0 +1,540 @@
+﻿from __future__ import annotations
+
+import argparse
+import sys
+from pathlib import Path
+from typing import Any
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from core.file_utils import write_json, write_text
+from core.markdown import table
+from core.metrics import aggregate_metrics, merge_ad_site, read_csv_folder
+
+
+TARGETS = {
+    "min_ctr": 0.015,
+    "max_cpc_usd": 0.8,
+    "min_landing_view_rate": 0.7,
+    "min_read_start_rate": 0.35,
+    "min_chapter_1_finish_rate": 0.25,
+    "min_chapter_3_finish_rate": 0.12,
+    "min_gate_view_rate": 0.08,
+    "min_unlock_click_rate": 0.02,
+    "target_roi": 1.1,
+    "preferred_roi": 1.3,
+}
+
+
+def _f(row: dict, key: str) -> float:
+    try:
+        return float(row.get(key, 0) or 0)
+    except Exception:
+        return 0.0
+
+
+def _name(row: dict) -> str:
+    return str(row.get("utm_content") or row.get("ad") or row.get("campaign") or "unknown")
+
+
+def _channel(row: dict) -> str:
+    return str(row.get("utm_source") or row.get("channel") or "unknown")
+
+
+def stage_from_metrics(best: dict) -> str:
+    if not best:
+        return "鏃犳暟鎹?
+    if _f(best, "roi") >= TARGETS["target_roi"]:
+        return "鏀剁泭楠岃瘉 / 鏀鹃噺鍊欓€?
+    if _f(best, "chapter_3_finish_rate") >= TARGETS["min_chapter_3_finish_rate"]:
+        return "闃呰璐ㄩ噺楠岃瘉"
+    if _f(best, "ctr") >= TARGETS["min_ctr"]:
+        return "鍐峰惎鍔ㄤ俊鍙锋祴璇?
+    return "鍐呭鍖呰璇婃柇 / 绱犳潗闇€閲嶅啓"
+
+
+def diagnose_row(row: dict) -> dict:
+    ctr = _f(row, "ctr")
+    cpc = _f(row, "cpc")
+    landing = _f(row, "landing_view_rate")
+    read_start = _f(row, "read_start_rate")
+    ch1 = _f(row, "chapter_1_finish_rate")
+    ch3 = _f(row, "chapter_3_finish_rate")
+    gate = _f(row, "gate_view_rate")
+    unlock = _f(row, "unlock_click_rate")
+    roi = _f(row, "roi")
+
+    problems: list[str] = []
+    strengths: list[str] = []
+    actions: list[str] = []
+
+    if roi >= TARGETS["target_roi"]:
+        strengths.append("ROI 杈炬爣锛屽叿澶囧彈鎺ф斁閲忓€欓€夎祫鏍?)
+    elif roi > 0:
+        problems.append("ROI 鏈揪鏍囷紝鏆備笉鏀鹃噺")
+
+    if ctr >= TARGETS["min_ctr"]:
+        strengths.append("CTR 鏈夌偣鍑讳俊鍙?)
+    else:
+        problems.append("CTR 寮憋細Hook 鎴栫礌鏉愰鍙ュ惛寮曞姏涓嶈冻")
+        actions.append("閲嶅啓鍓嶄袱琛?Hook锛屾祴璇曟洿娓呮櫚鐨勮儗鍙?澶嶄粐/韬唤鍙嶈浆瑙掑害")
+
+    if cpc and cpc <= TARGETS["max_cpc_usd"]:
+        strengths.append("CPC 鍙帴鍙?)
+    elif cpc > TARGETS["max_cpc_usd"]:
+        problems.append("CPC 鍋忛珮锛氫汉缇ゆ垨绱犳潗鍖归厤鎴愭湰楂?)
+        actions.append("娴嬭瘯鏇村浜虹兢锛屽噺灏戝鏉備笘鐣岃琛ㄨ揪锛屼娇鐢ㄦ洿鐩存帴鐨勬儏缁啿绐?)
+
+    if landing and landing < TARGETS["min_landing_view_rate"]:
+        problems.append("鐐瑰嚮鍒拌惤鍦伴〉鎵撳紑鐜囦綆锛氶摼鎺ャ€佸姞杞介€熷害鎴栧钩鍙拌烦杞彲鑳芥湁闂")
+        actions.append("妫€鏌ヨ惤鍦伴〉閫熷害銆乁TM閾炬帴銆佺Щ鍔ㄧ棣栧睆鍔犺浇")
+
+    if read_start < TARGETS["min_read_start_rate"]:
+        problems.append("Read Start 寮憋細钀藉湴椤甸灞忔垨 CTA 鎵挎帴涓嶈冻")
+        actions.append("灏?Start Reading 鎸夐挳鍜岀涓€绔犲叆鍙ｄ笂绉诲埌棣栧睆")
+    else:
+        strengths.append("Read Start 杈惧埌鍩烘湰闃呰鎵挎帴瑕佹眰")
+
+    if ch1 < TARGETS["min_chapter_1_finish_rate"]:
+        problems.append("绗?绔犺瀹岀巼寮憋細骞垮憡鎵胯鍜岀涓€绔犲紑灞€鍙兘涓嶅尮閰?)
+        actions.append("妫€鏌ョ涓€绔犳槸鍚﹀湪鍓?500-800 璇嶅厬鐜板箍鍛?Hook 鐨勬牳蹇冨啿绐?)
+    else:
+        strengths.append("绗?绔犲叿澶囧熀鏈壙鎺ュ姏")
+
+    if ch3 < TARGETS["min_chapter_3_finish_rate"]:
+        problems.append("绗?绔犺瀹岀巼寮憋細鍓嶄笁绔犵暀瀛樻垨绔犺妭閽╁瓙涓嶈冻")
+        actions.append("寮哄寲绗?-3绔犱箣闂寸殑鎮康銆佸弽杞拰缁х画闃呰鍔ㄦ満")
+    else:
+        strengths.append("鍓嶄笁绔犵暀瀛樹俊鍙疯緝濂?)
+
+    if gate < TARGETS["min_gate_view_rate"]:
+        problems.append("Gate View 寮憋細鐢ㄦ埛鍒拌揪鍙樼幇鑺傜偣涓嶈冻")
+    if unlock < TARGETS["min_unlock_click_rate"]:
+        problems.append("Unlock Click 寮憋細瑙ｉ攣浠峰€兼壙璇烘垨鎸夐挳鏂囨涓嶈冻")
+        actions.append("閲嶅啓 Chapter Gate 鏂囨锛屾槑纭户缁槄璇荤殑鎯呯华鍥炴姤")
+
+    if ctr >= TARGETS["min_ctr"] and ch1 < 0.15:
+        problem_location = "绱犳潗鏈夌偣鍑诲惛寮曞姏锛屼絾闃呰鎵挎帴宸紱浼樺厛妫€鏌ユ爣棰樺厷椋庨櫓銆佽惤鍦伴〉鍜岀涓€绔犲厬鐜板害"
+        actions.append("涓嶈鐩存帴鏀鹃噺锛涘厛閲嶅啓骞垮憡姝ｆ枃锛岃鎵胯鏇磋创杩戠涓€绔?)
+    elif ctr < TARGETS["min_ctr"] and ch1 >= TARGETS["min_chapter_1_finish_rate"]:
+        problem_location = "鍐呭鏈夐槄璇讳环鍊硷紝浣?Hook/绱犳潗鍖呰寮?
+        actions.append("淇濈暀浜虹兢锛岄噸鍐?Hook 鍜岄灞忔枃妗?)
+    elif ctr >= TARGETS["min_ctr"] and ch1 >= TARGETS["min_chapter_1_finish_rate"] and roi < TARGETS["target_roi"]:
+        problem_location = "绱犳潗鍜岄槄璇绘壙鎺ラ兘鏈変俊鍙凤紝浣嗘敹鐩婇摼璺笉瓒筹紱妫€鏌?Gate銆佸箍鍛婅В閿佸拰鍙樼幇 RPM"
+        actions.append("浼樺寲 Chapter Gate銆佸箍鍛婅В閿佸叆鍙ｅ拰骞垮憡浣嶆敹鐩?)
+    elif roi >= TARGETS["target_roi"]:
+        problem_location = "褰撳墠缁勫悎宸茶繘鍏ユ敹鐩婇獙璇?鍙楁帶鏀鹃噺鍊欓€?
+    else:
+        problem_location = "绱犳潗銆佷汉缇ゃ€佽惤鍦伴〉鎴栧唴瀹瑰紑灞€閮介渶瑕侀噸鏂拌瘖鏂?
+
+    decision = "rewrite"
+    if roi >= TARGETS["target_roi"] and ch3 >= TARGETS["min_chapter_3_finish_rate"]:
+        decision = "scale_candidate"
+    elif roi >= 0.8 or (ctr >= TARGETS["min_ctr"] and ch1 >= TARGETS["min_chapter_1_finish_rate"]):
+        decision = "keep_or_iterate"
+    elif ctr < 0.01 and (cpc > TARGETS["max_cpc_usd"] or cpc == 0):
+        decision = "kill"
+    elif ctr >= TARGETS["min_ctr"] and ch1 < 0.15:
+        decision = "rewrite_alignment"
+
+    return {
+        "combination": _name(row),
+        "channel": _channel(row),
+        "decision": decision,
+        "problem_location": problem_location,
+        "strengths": strengths,
+        "problems": problems,
+        "recommended_actions": list(dict.fromkeys(actions))[:6],
+    }
+
+
+def action_buckets(rows: list[dict]) -> dict:
+    buckets = {
+        "scale_candidates": [],
+        "keep": [],
+        "rewrite": [],
+        "kill": [],
+        "high_click_low_reading": [],
+        "low_click_high_reading": [],
+        "high_ctr_low_roi": [],
+        "best_roi": [],
+        "best_appeal": [],
+    }
+    if not rows:
+        return buckets
+
+    for r in rows:
+        diag = diagnose_row(r)
+        item = {
+            "utm_content": r.get("utm_content", ""),
+            "utm_source": r.get("utm_source", ""),
+            "utm_term": r.get("utm_term", ""),
+            "roi": r.get("roi", 0),
+            "net_profit": r.get("net_profit", 0),
+            "ctr": r.get("ctr", 0),
+            "cpc": r.get("cpc", 0),
+            "chapter_1_finish_rate": r.get("chapter_1_finish_rate", 0),
+            "chapter_3_finish_rate": r.get("chapter_3_finish_rate", 0),
+            "unlock_click_rate": r.get("unlock_click_rate", 0),
+            "appeal_signal": r.get("appeal_signal", 0),
+            "diagnosis": diag,
+        }
+        if diag["decision"] == "scale_candidate":
+            buckets["scale_candidates"].append(item)
+        elif diag["decision"] == "kill":
+            buckets["kill"].append(item)
+        elif diag["decision"].startswith("rewrite"):
+            buckets["rewrite"].append(item)
+        else:
+            buckets["keep"].append(item)
+
+        if _f(r, "ctr") >= TARGETS["min_ctr"] and _f(r, "chapter_1_finish_rate") < 0.15:
+            buckets["high_click_low_reading"].append(item)
+        if _f(r, "ctr") < TARGETS["min_ctr"] and _f(r, "chapter_1_finish_rate") >= TARGETS["min_chapter_1_finish_rate"]:
+            buckets["low_click_high_reading"].append(item)
+        if _f(r, "ctr") >= TARGETS["min_ctr"] and _f(r, "roi") < 1.0:
+            buckets["high_ctr_low_roi"].append(item)
+
+    buckets["best_roi"] = sorted(
+        [r for r in rows if _f(r, "roi") > 0],
+        key=lambda x: (_f(x, "roi"), _f(x, "net_profit")),
+        reverse=True,
+    )[:3]
+    buckets["best_appeal"] = sorted(rows, key=lambda x: _f(x, "appeal_signal"), reverse=True)[:3]
+    return buckets
+
+
+def budget_actions(report: dict) -> list[str]:
+    best = report.get("best_combination", {})
+    buckets = report.get("action_buckets", {})
+    actions: list[str] = []
+
+    if not best:
+        return ["No data imported. Do not adjust budget until ad/site CSV data is available."]
+
+    if best.get("roi", 0) >= TARGETS["target_roi"] and best.get("net_profit", 0) > 0:
+        actions.append(
+            f"鍙楁帶鏀鹃噺锛歿best.get('utm_content')} ROI={best.get('roi'):.2f}锛屽噣鏀剁泭={best.get('net_profit'):.2f}銆備笅涓€杞绠楁渶澶氭彁楂?20%-30%锛屼笉瑕佷竴娆℃€х炕鍊嶃€?
+        )
+    else:
+        actions.append("鏈‘璁ゆ ROI锛氫笅涓€杞互閲嶅啓绱犳潗鍜岄獙璇侀槄璇昏川閲忎负涓伙紝涓嶅缓璁暣浣撳姞棰勭畻銆?)
+
+    if buckets.get("high_ctr_low_roi"):
+        names = ", ".join(x.get("utm_content", "") for x in buckets["high_ctr_low_roi"][:3])
+        actions.append(f"楂樼偣鍑讳綆鏀剁泭缁勫悎鏆備笉鏀鹃噺锛歿names}銆傛鏌ヤ汉缇よ川閲忋€佽惤鍦伴〉鎵挎帴銆丆hapter Gate 鍜屽箍鍛婃敹鐩娿€?)
+
+    if buckets.get("kill"):
+        names = ", ".join(x.get("utm_content", "") for x in buckets["kill"][:3])
+        actions.append(f"鍋滄姇/闄嶆潈锛歿names}銆傚師鍥犻€氬父鏄?CTR 浣庝笖 CPC 楂橈紝缁х画鑺遍挶浠峰€间綆銆?)
+
+    fb_winners = [x for x in buckets.get("scale_candidates", []) if x.get("utm_source") == "facebook"]
+    if fb_winners:
+        actions.append("Facebook 鏄綋鍓嶄紭鍏堟斁閲忔笭閬擄細澶嶅埗璧㈠ Hook锛岀敓鎴?5-8 涓彉浣擄紝淇濇寔鍚屼竴浜虹兢灏忓箙鍔犻绠楁祴璇曘€?)
+
+    tt_bad = [x for x in buckets.get("high_ctr_low_roi", []) if x.get("utm_source") == "tiktok"]
+    if tt_bad:
+        actions.append("TikTok 鐐瑰嚮淇″彿涓嶈兘鐩存帴浠ｈ〃鏀剁泭锛氬厛閲嶅啓鑴氭湰锛岃鍓嶄笁绉?Hook 涓庣涓€绔犲唴瀹规洿涓€鑷达紝鍐嶅皬棰勭畻澶嶆祴銆?)
+
+    return actions
+
+
+def make_growth_report(book_id: str, round_id: str, grouped) -> dict:
+    rows = grouped.to_dict(orient="records") if not grouped.empty else []
+    best = rows[0] if rows else {}
+    worst = rows[-1] if rows else {}
+    buckets = action_buckets(rows)
+    best_appeal = buckets.get("best_appeal", [{}])[0] if buckets.get("best_appeal") else {}
+    report = {
+        "book_id": book_id,
+        "round": round_id,
+        "current_stage": stage_from_metrics(best) if best else "鏃犳暟鎹?,
+        "north_star_metric": "net_profit_per_day",
+        "final_goal": "maximize net profit in the shortest practical time",
+        "target_summary": TARGETS,
+        "has_positive_roi_candidate": bool(best and best.get("roi", 0) >= TARGETS["target_roi"]),
+        "has_scale_candidate": bool(buckets.get("scale_candidates")),
+        "best_combination": best,
+        "worst_combination": worst,
+        "top_rows": rows[:10],
+        "action_buckets": buckets,
+        "appeal_diagnostics": {
+            "note": "Appeal diagnostics locate problems in content, hook, creative, landing page, or reading continuation. It is diagnostic only; ROI and net profit remain final goals.",
+            "highest_appeal_signal": best_appeal,
+            "high_click_low_reading": buckets.get("high_click_low_reading", []),
+            "low_click_high_reading": buckets.get("low_click_high_reading", []),
+            "high_ctr_low_roi": buckets.get("high_ctr_low_roi", []),
+            "diagnosed_top_rows": [diagnose_row(r) for r in rows[:10]],
+        },
+    }
+    report["recommendations"] = recommend(rows, report)
+    report["budget_actions"] = budget_actions(report)
+    report["next_decision_timeline"] = {
+        "24h": "鍒ゆ柇 CTR/CPC/Landing View锛屾窐姹版槑鏄炬棤鐐瑰嚮淇″彿涓旀垚鏈珮鐨勭礌鏉愩€?,
+        "48_72h": "鍒ゆ柇 Read Start銆丆hapter 1 Finish銆丆hapter 3 Finish锛屽尯鍒嗘爣棰樺厷鍜岀湡瀹炶鑰呫€?,
+        "3_7d": "鍒ゆ柇 Unlock銆丷evenue Per Click銆丷OI銆丯et Profit锛屽喅瀹氭槸鍚﹀彈鎺ф斁閲忋€?,
+    }
+    return report
+
+
+def recommend(rows: list[dict], report: dict) -> list[str]:
+    if not rows:
+        return ["No data imported. Export Facebook/TikTok and site event CSV files first."]
+
+    best = rows[0]
+    recs = []
+
+    if best.get("roi", 0) >= TARGETS["target_roi"]:
+        recs.append("鍙戠幇姝?ROI 鍊欓€夛細鍏佽鍙楁帶鍔犻绠楋紝骞跺鍒惰耽瀹?Hook/浜虹兢缁勫悎鍋氬彉浣撴祴璇曘€?)
+    else:
+        recs.append("灏氭湭纭姝?ROI锛氫笉瑕佹暣浣撴斁閲忥紝缁х画鍒嗛樁娈甸獙璇佺礌鏉愩€侀槄璇昏川閲忓拰鏀剁泭閾捐矾銆?)
+
+    diag = diagnose_row(best)
+    recs.append(f"褰撳墠璧㈠璇婃柇锛歿diag['problem_location']}")
+    for action in diag.get("recommended_actions", [])[:4]:
+        recs.append(action)
+
+    buckets = report.get("action_buckets", {})
+    if buckets.get("high_click_low_reading"):
+        recs.append("瀛樺湪楂樼偣鍑讳綆闃呰缁勫悎锛氫笉瑕佽 CTR 璇锛屼紭鍏堟鏌ュ箍鍛婃壙璇轰笌绗竴绔犲厬鐜板害銆?)
+    if buckets.get("low_click_high_reading"):
+        recs.append("瀛樺湪浣庣偣鍑婚珮闃呰缁勫悎锛氳鏄庡唴瀹瑰彲鑳芥湁浠峰€硷紝浣?Hook/绱犳潗鍖呰闇€瑕侀噸鍐欍€?)
+    if buckets.get("high_ctr_low_roi"):
+        recs.append("瀛樺湪楂?CTR 浣?ROI 缁勫悎锛氶噸鐐规鏌ヤ汉缇よ川閲忋€丆hapter Gate銆佸箍鍛婅В閿佸畬鎴愮巼鍜?RPM銆?)
+
+    return list(dict.fromkeys(recs))
+
+
+def _fmt_pct(v: Any) -> str:
+    try:
+        return f"{float(v) * 100:.2f}%"
+    except Exception:
+        return "0.00%"
+
+
+def _fmt_money(v: Any) -> str:
+    try:
+        return f"${float(v):.2f}"
+    except Exception:
+        return "$0.00"
+
+
+def _simple_items(items: list[dict], max_n: int = 5) -> list[str]:
+    out = []
+    for x in items[:max_n]:
+        out.append(
+            f"{x.get('utm_content','')} | {x.get('utm_source','')} | ROI={float(x.get('roi',0)):.2f} | CTR={_fmt_pct(x.get('ctr',0))} | C1={_fmt_pct(x.get('chapter_1_finish_rate',0))} | Net={_fmt_money(x.get('net_profit',0))}"
+        )
+    return out
+
+
+def write_report_md(path: Path, report: dict) -> None:
+    rows = report.get("top_rows", [])
+    columns = [
+        "utm_source", "utm_campaign", "utm_content", "impressions", "clicks", "spend",
+        "ctr", "cpc", "read_start_rate", "chapter_1_finish_rate", "chapter_3_finish_rate",
+        "unlock_click_rate", "revenue", "roi", "net_profit", "appeal_signal"
+    ]
+    buckets = report.get("action_buckets", {})
+    lines = [
+        f"# Growth Report 鈥?{report['book_id']} / {report['round']}",
+        "",
+        f"**Current Stage:** {report.get('current_stage')}",
+        f"**Final Goal:** {report.get('final_goal')}",
+        f"**Positive ROI Candidate:** {report.get('has_positive_roi_candidate')}",
+        f"**Scale Candidate Exists:** {report.get('has_scale_candidate')}",
+        "",
+        "## Executive Decision",
+        "",
+    ]
+    best = report.get("best_combination", {})
+    if best:
+        lines.extend([
+            f"- Current winner: `{best.get('utm_content', '')}` from `{best.get('utm_source', '')}`.",
+            f"- ROI: **{float(best.get('roi', 0)):.2f}**; Net Profit: **{_fmt_money(best.get('net_profit', 0))}**; CTR: **{_fmt_pct(best.get('ctr', 0))}**; CPC: **{_fmt_money(best.get('cpc', 0))}**.",
+            f"- Read Start: **{_fmt_pct(best.get('read_start_rate', 0))}**; Chapter 1 Finish: **{_fmt_pct(best.get('chapter_1_finish_rate', 0))}**; Chapter 3 Finish: **{_fmt_pct(best.get('chapter_3_finish_rate', 0))}**; Unlock Click: **{_fmt_pct(best.get('unlock_click_rate', 0))}**.",
+        ])
+    else:
+        lines.append("- No data imported yet.")
+
+    lines.extend(["", "## Top Combinations", "", table(rows[:10], columns), ""])
+
+    lines.extend(["## Action Buckets", ""])
+    bucket_titles = [
+        ("scale_candidates", "Scale Candidates / 鍙楁帶鏀鹃噺鍊欓€?),
+        ("keep", "Keep or Iterate / 淇濈暀杩唬"),
+        ("rewrite", "Rewrite / 閲嶅啓"),
+        ("kill", "Kill or Pause / 鍋滄姇闄嶆潈"),
+        ("high_click_low_reading", "High Click + Low Reading / 楂樼偣鍑讳綆闃呰"),
+        ("low_click_high_reading", "Low Click + High Reading / 浣庣偣鍑婚珮闃呰"),
+        ("high_ctr_low_roi", "High CTR + Low ROI / 楂樼偣鍑讳綆鏀剁泭"),
+    ]
+    for key, title in bucket_titles:
+        lines.append(f"### {title}")
+        items = _simple_items(buckets.get(key, []))
+        if items:
+            for item in items:
+                lines.append(f"- {item}")
+        else:
+            lines.append("- None")
+        lines.append("")
+
+    lines.extend([
+        "## Appeal Diagnostics",
+        "",
+        report.get("appeal_diagnostics", {}).get("note", ""),
+        "",
+        "### Top Row Diagnosis",
+    ])
+    for diag in report.get("appeal_diagnostics", {}).get("diagnosed_top_rows", [])[:5]:
+        lines.append(f"#### {diag.get('combination')} 鈥?{diag.get('decision')}")
+        lines.append(f"- Problem Location: {diag.get('problem_location')}")
+        for s in diag.get("strengths", [])[:4]:
+            lines.append(f"- Strength: {s}")
+        for p in diag.get("problems", [])[:4]:
+            lines.append(f"- Problem: {p}")
+        for a in diag.get("recommended_actions", [])[:4]:
+            lines.append(f"- Action: {a}")
+        lines.append("")
+
+    lines.extend(["## Budget Actions", ""])
+    for action in report.get("budget_actions", []):
+        lines.append(f"- {action}")
+
+    lines.extend(["", "## Recommendations", ""])
+    for rec in report.get("recommendations", []):
+        lines.append(f"- {rec}")
+
+    lines.extend(["", "## Next Decision Timeline", ""])
+    for k, v in report.get("next_decision_timeline", {}).items():
+        lines.append(f"- **{k}:** {v}")
+
+    write_text(path, "\n".join(lines))
+
+
+def make_next_round_plan(book_id: str, round_id: str, report: dict) -> dict:
+    best = report.get("best_combination", {})
+    buckets = report.get("action_buckets", {})
+    best_name = best.get("utm_content", "") if best else ""
+    positive = best.get("roi", 0) >= TARGETS["target_roi"] if best else False
+    budget_mode = "controlled_scale" if positive else "validation_only"
+    return {
+        "book_id": book_id,
+        "round": round_id,
+        "next_round_goal": "Shorten time to positive ROI by scaling winners carefully and rewriting weak links blocking revenue.",
+        "budget_mode": budget_mode,
+        "keep": [x.get("utm_content", "") for x in buckets.get("keep", [])[:5]],
+        "rewrite": [x.get("utm_content", "") for x in buckets.get("rewrite", [])[:5]],
+        "kill": [x.get("utm_content", "") for x in buckets.get("kill", [])[:5]],
+        "scale_candidates": [x.get("utm_content", "") for x in buckets.get("scale_candidates", [])[:5]],
+        "winner_to_clone": best_name,
+        "facebook_next_actions": [
+            f"Clone the winner `{best_name}` into 5-8 variants: betrayal, revenge, hidden identity, power reversal, romantic tension." if best_name else "Generate 5 new Facebook hooks from the clearest betrayal/revenge angle.",
+            "If ROI >= 1.10 and net profit > 0, increase only the winning ad set by 20%-30% for the next 24 hours.",
+            "Keep Facebook as the primary channel. Do not move budget to TikTok until TikTok reading quality improves.",
+            "Pause combinations listed in kill bucket. Rewrite combinations listed in rewrite bucket before spending more.",
+        ],
+        "tiktok_next_actions": [
+            "Turn the winning Facebook hook into 3 TikTok scripts, but match the first chapter more closely.",
+            "If TikTok has high CTR but low ROI, keep TikTok as a hook-discovery channel, not a scale channel.",
+            "Test subtitles that describe the actual chapter-one conflict rather than only broad shock lines.",
+        ],
+        "site_next_actions": [
+            "If Read Start is below target, move CTA and first chapter entry above the fold.",
+            "If Chapter 1 Finish is below target, compare ad promise with chapter-one opening payoff.",
+            "If Unlock Click is below target, rewrite Chapter Gate copy around the strongest unresolved conflict.",
+            "If ROI is low despite good reading depth, inspect RPM, ad unlock completion, and ad placement yield.",
+        ],
+        "content_feedback_focus": [
+            "Only feed back problems in title, intro, first-three-chapter promise alignment, and market packaging.",
+            "Do not allow growth data to rewrite the full novel automatically.",
+        ],
+        "decision_timeline": report.get("next_decision_timeline", {}),
+    }
+
+
+def write_next_round_md(path: Path, plan: dict) -> None:
+    lines = [f"# Next Round Plan 鈥?{plan['book_id']}", ""]
+    lines.append(f"**Goal:** {plan.get('next_round_goal')}")
+    lines.append(f"**Budget Mode:** {plan.get('budget_mode')}")
+    lines.append(f"**Winner To Clone:** {plan.get('winner_to_clone')}")
+    lines.append("")
+    for label in ["scale_candidates", "keep", "rewrite", "kill"]:
+        lines.append(f"## {label.replace('_', ' ').title()}")
+        items = plan.get(label, [])
+        if items:
+            for item in items:
+                lines.append(f"- {item}")
+        else:
+            lines.append("- None")
+        lines.append("")
+    for section in ["facebook_next_actions", "tiktok_next_actions", "site_next_actions", "content_feedback_focus"]:
+        lines.append(f"## {section.replace('_', ' ').title()}")
+        for item in plan.get(section, []):
+            lines.append(f"- {item}")
+        lines.append("")
+    lines.append("## Decision Timeline")
+    for k, v in plan.get("decision_timeline", {}).items():
+        lines.append(f"- **{k}:** {v}")
+    write_text(path, "\n".join(lines))
+
+
+def make_growth_feedback(book_id: str, round_id: str, report: dict, plan: dict) -> dict:
+    buckets = report.get("action_buckets", {})
+    return {
+        "book_id": book_id,
+        "test_round": round_id,
+        "final_goal": report.get("final_goal"),
+        "current_stage": report.get("current_stage"),
+        "best_hooks": [report.get("best_combination", {}).get("utm_content", "")],
+        "worst_hooks": [report.get("worst_combination", {}).get("utm_content", "")],
+        "best_personas": [report.get("best_combination", {}).get("utm_term", "")],
+        "scale_candidates": [x.get("utm_content", "") for x in buckets.get("scale_candidates", [])[:5]],
+        "rewrite_candidates": [x.get("utm_content", "") for x in buckets.get("rewrite", [])[:5]],
+        "kill_candidates": [x.get("utm_content", "") for x in buckets.get("kill", [])[:5]],
+        "weak_points": report.get("recommendations", []),
+        "recommendations_for_content_team": [
+            "If Chapter 1 Finish is weak, ensure the opening delivers the ad promise within the first scene.",
+            "If Chapter 3 Finish is weak, strengthen chapter 2-3 cliffhanger and emotional reversal.",
+            "If CTR is weak but reading quality is high, preserve content direction and ask growth team to rewrite packaging.",
+            "Do not let growth data directly rewrite the whole novel; use it to improve packaging and early-chapter promise alignment.",
+        ],
+        "recommendations_for_site_team": plan.get("site_next_actions", []),
+        "recommendations_for_growth_team": plan.get("facebook_next_actions", []) + plan.get("tiktok_next_actions", []),
+    }
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--book", default="book_001")
+    parser.add_argument("--round", default="round_001")
+    parser.add_argument("--reports-root", default=str(ROOT / "data_reports"))
+    parser.add_argument("--output-root", default=str(ROOT / "output"))
+    args = parser.parse_args()
+
+    reports_root = Path(args.reports_root)
+    output_root = Path(args.output_root)
+
+    ad_df = read_csv_folder(reports_root / "ad_reports")
+    site_df = read_csv_folder(reports_root / "site_events")
+    merged = merge_ad_site(ad_df, site_df)
+
+    grouped = aggregate_metrics(merged, ["utm_source", "utm_campaign", "utm_content", "utm_term"]) if not merged.empty else merged
+
+    report = make_growth_report(args.book, args.round, grouped)
+    write_json(output_root / "reports" / f"{args.book}_growth_report.json", report)
+    write_report_md(output_root / "reports" / f"{args.book}_growth_report.md", report)
+
+    plan = make_next_round_plan(args.book, args.round, report)
+    write_json(output_root / "next_rounds" / f"{args.book}_next_round_plan.json", plan)
+    write_next_round_md(output_root / "next_rounds" / f"{args.book}_next_round_plan.md", plan)
+
+    feedback = make_growth_feedback(args.book, args.round, report, plan)
+    write_json(output_root / "feedback" / f"{args.book}_growth_feedback.json", feedback)
+
+    print("DONE. Analysis outputs generated under:", output_root)
+
+
+if __name__ == "__main__":
+    main()
+

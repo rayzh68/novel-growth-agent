@@ -1,0 +1,503 @@
+{
+  "version": "story_bible_qa_rules_v3_1",
+  "purpose": "QA rules for adapted chapters of project_001 to ensure adherence to the Story Bible, focusing on character consistency, plot progression, and commercial appeal.",
+  "score_thresholds": {
+    "pass": 8.5,
+    "revise": 7.5,
+    "fail": 0
+  },
+  "dimensions": [
+    {
+      "id": "name_lock_consistency",
+      "name": "Name Lock Consistency",
+      "weight": 0.15,
+      "checks": [
+        {
+          "id": "name_production_english",
+          "description": "The chapter must use the production English names for all main characters as defined in the Story Bible's name locks. (Note: Specific English names 'Elara Willow', 'Kaelen Sterling', etc., are assumed mappings based on character roles, as 'names.md' was not provided in the input data.)",
+          "severity": "block",
+          "pass_condition": "All main character names match the approved English production names.",
+          "fail_examples": [
+            "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text_guard_cleanliness",
+      "name": "Text Guard Cleanliness",
+      "weight": 0.1,
+      "checks": [
+        {
+          "id": "no_chinese_pinyin_mojibake",
+          "description": "The chapter must not contain Chinese characters, pinyin names (unless explicitly approved for cultural terms), or mojibake.",
+          "severity": "block",
+          "pass_condition": "No Chinese characters, pinyin names (unless approved), or mojibake are present in the text.",
+          "fail_examples": [
+            "Using '' instead of 'Elara Willow'.",
+            "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden.",
+            "Garbled text characters."
+          ]
+        },
+        {
+          "id": "no_censorship_placeholders",
+          "description": "The chapter must not contain censorship placeholders (e.g., 'pao', 'chuang', 'jian', 'ba', 'sao', 'liang').",
+          "severity": "block",
+          "pass_condition": "No censorship placeholders are present in the text.",
+          "fail_examples": [
+            "Using 'pao' instead of 'an instant hit'.",
+            "Using 'chuang' instead of 'lying quietly on the bed'."
+          ]
+        },
+        {
+          "id": "anachronistic_modern_slang",
+          "description": "The chapter must avoid anachronistic modern slang or concepts that break immersion, unless explicitly used by the transmigrator protagonist for internal monologue and clearly marked as such.",
+          "severity": "major",
+          "pass_condition": "Modern slang and concepts are absent or used appropriately by the transmigrator protagonist in internal monologue.",
+          "fail_examples": [
+            "Characters other than Elara Willow using terms like '', '', '', '', 'boss', ''.",
+            "Elara Willow using 'flying saucers' or 'first-tier developed cities' in dialogue."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "timeline_anti_drift",
+      "name": "Timeline Anti-Drift",
+      "weight": 0.15,
+      "checks": [
+        {
+          "id": "no_early_reveals",
+          "description": "The chapter must not reveal identities, secrets, marriage, pregnancy, children, military/noble status, or HEA earlier than allowed by the chapter timeline.",
+          "severity": "block",
+          "pass_condition": "No plot-critical information is revealed prematurely.",
+          "fail_examples": [
+            "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden.",
+            "Revealing Eleanor Maeve's (Chen Shi's) remarriage before it happens (Chapter 287)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "relationship_continuity",
+      "name": "Relationship Continuity",
+      "weight": 0.1,
+      "checks": [
+        {
+          "id": "preserve_family_relationships",
+          "description": "The chapter must preserve established family and household relationships, including their dynamics and conflicts.",
+          "severity": "block",
+          "pass_condition": "All character relationships (e.g., parent-child, sibling, marital, in-law) are consistent with the Story Bible.",
+          "fail_examples": [
+            "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden.",
+            "Changing the antagonistic relationship between Agnes Thorne (Huang Shi) and Seraphina Vance (Zhou Shi)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reveal_timing",
+      "name": "Reveal Timing",
+      "weight": 0.05,
+      "checks": [
+        {
+          "id": "preserve_reveal_pacing",
+          "description": "The chapter must maintain the intended pacing of major plot reveals, ensuring key information is disclosed at the appropriate narrative moment.",
+          "severity": "major",
+          "pass_condition": "Major plot reveals (e.g., character backstories, hidden powers, future events) occur as per the established timeline.",
+          "fail_examples": [
+            "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "female_lead_agency",
+      "name": "Female Lead Agency",
+      "weight": 0.1,
+      "checks": [
+        {
+          "id": "elara_willow_active_intelligent",
+          "description": "The chapter must keep Elara Willow (legacy source/adaptation name) as an active, intelligent, commercially appealing female lead, avoiding 'pushover saint' drift. She is explicitly 'not a shengmu' ().",
+          "severity": "block",
+          "pass_condition": "Elara Willow (legacy source/adaptation name) demonstrates agency, intelligence, and commercial acumen, and does not act as a 'pushover saint'.",
+          "fail_examples": [
+            "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden."
+          ]
+        },
+        {
+          "id": "elara_willow_monogamy_stance",
+          "description": "Elara Willow's (legacy source/adaptation name's) absolute insistence on monogamy ('') must be preserved as a core character trait.",
+          "severity": "block",
+          "pass_condition": "Elara Willow's (legacy source/adaptation name's) stance on monogamy is clearly maintained and not compromised.",
+          "fail_examples": [
+            "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "male_lead_consistency",
+      "name": "Male Lead Consistency",
+      "weight": 0.1,
+      "checks": [
+        {
+          "id": "kaelen_sterling_protective_powerful",
+          "description": "The chapter must keep Kaelen Sterling (legacy source/adaptation name) as protective, powerful, restrained, and monogamous.",
+          "severity": "block",
+          "pass_condition": "Kaelen Sterling (legacy source/adaptation name) consistently displays protective, powerful, restrained, and monogamous traits.",
+          "fail_examples": [
+            "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "romance_progression",
+      "name": "Romance Progression",
+      "weight": 0.05,
+      "checks": [
+        {
+          "id": "preserve_romance_beats",
+          "description": "The chapter must preserve romance progression and not skip emotional beats between Elara Willow (legacy source/adaptation name) and Kaelen Sterling (legacy source/adaptation name).",
+          "severity": "major",
+          "pass_condition": "The emotional development and key romantic interactions between the leads are maintained.",
+          "fail_examples": [
+            "Skipping a significant romantic milestone (e.g., first kiss, proposal, acceptance) without narrative justification.",
+            "Reducing the emotional impact of their interactions."
+          ]
+        },
+        {
+          "id": "avoid_sexual_content_drift",
+          "description": "The chapter must avoid overly explicit sexual content or implied sexual assault, especially in intimate scenes, ensuring consent is clear and appropriate for the target audience.",
+          "severity": "block",
+          "pass_condition": "Intimate scenes are handled sensitively, consent is unambiguous, and content aligns with target audience guidelines.",
+          "fail_examples": [
+            "Depicting non-consensual physical intimacy.",
+            "Descriptions that are excessively graphic or explicit beyond the intended tone."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "revenge_and_justice_payoff",
+      "name": "Revenge and Justice Payoff",
+      "weight": 0.05,
+      "checks": [
+        {
+          "id": "preserve_villain_justice_progression",
+          "description": "The chapter must preserve villain/justice progression, ensuring antagonists face appropriate consequences and revenge arcs are satisfied.",
+          "severity": "major",
+          "pass_condition": "Antagonists receive justified consequences for their actions, and revenge plots are resolved as per the narrative arc.",
+          "fail_examples": [
+            "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden.",
+            "Softening the justified retribution against villains."
+          ]
+        },
+        {
+          "id": "avoid_unheroic_ruthlessness_drift",
+          "description": "While Elara Willow (legacy source/adaptation name) is not a 'saint', her actions must not drift into excessively violent, unheroic, or morally ambiguous territory without clear narrative justification and consequences.",
+          "severity": "major",
+          "pass_condition": "Elara Willow's (legacy source/adaptation name's) ruthless actions are justified by the narrative and do not portray her as excessively cruel or unheroic.",
+          "fail_examples": [
+            "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business_progression",
+      "name": "Business Progression",
+      "weight": 0.05,
+      "checks": [
+        {
+          "id": "preserve_business_wealth_progression",
+          "description": "The chapter must preserve business/wealth progression, showing Elara Willow's (legacy source/adaptation name's) entrepreneurial success and financial growth.",
+          "severity": "major",
+          "pass_condition": "Elara Willow's (legacy source/adaptation name's) business ventures and accumulation of wealth are consistently depicted and progress logically.",
+          "fail_examples": [
+            "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden.",
+            "Inconsistencies in the growth or challenges of her enterprises."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "commercial_retention",
+      "name": "Commercial Retention",
+      "weight": 0.05,
+      "checks": [
+        {
+          "id": "facebook_dreame_goodnovel_style",
+          "description": "The chapter must support Facebook/Dreame/GoodNovel-style retention: hook, emotional payoff, cliffhanger, revenge satisfaction, romance tension.",
+          "severity": "minor",
+          "pass_condition": "The chapter effectively uses hooks, emotional payoffs, cliffhangers, revenge satisfaction, and romance tension to maintain reader engagement.",
+          "fail_examples": [
+            "A chapter ending without a clear hook or cliffhanger.",
+            "Lack of emotional impact or resolution in key scenes.",
+            "Absence of satisfying moments of revenge or romantic tension."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prose_quality",
+      "name": "Prose Quality",
+      "weight": 0.05,
+      "checks": [
+        {
+          "id": "grammar_spelling_punctuation",
+          "description": "The chapter must maintain high standards of grammar, spelling, and punctuation.",
+          "severity": "minor",
+          "pass_condition": "The text is free of significant grammatical errors, misspellings, and punctuation mistakes.",
+          "fail_examples": [
+            "Numerous typos or grammatical errors.",
+            "Inconsistent punctuation usage."
+          ]
+        },
+        {
+          "id": "flow_readability_style",
+          "description": "The chapter must have good flow, readability, and consistent narrative style.",
+          "severity": "minor",
+          "pass_condition": "The prose is engaging, easy to read, and maintains a consistent tone and style.",
+          "fail_examples": [
+            "Awkward phrasing or sentence structure.",
+            "Sudden shifts in narrative voice or tone."
+          ]
+        }
+      ]
+    }
+  ],
+  "name_consistency_rules": [
+    {
+      "id": "name_elara_willow",
+      "required_name": "Elara Willow",
+      "forbidden_names": [
+        "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden.",
+        "Needs verification"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "name_kaelen_sterling",
+      "required_name": "Kaelen Sterling",
+      "forbidden_names": [
+        "Needs verification"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "name_eleanor_maeve",
+      "required_name": "Eleanor Maeve",
+      "forbidden_names": [
+        "Needs verification"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "name_piper_rose",
+      "required_name": "Piper Rose",
+      "forbidden_names": [
+        "Needs verification"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "name_arthur_blackwood",
+      "required_name": "Arthur Blackwood",
+      "forbidden_names": [
+        "Needs verification"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "name_agnes_thorne",
+      "required_name": "Agnes Thorne",
+      "forbidden_names": [
+        "Needs verification"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "name_seraphina_vance",
+      "required_name": "Seraphina Vance",
+      "forbidden_names": [
+        "Needs verification"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "name_briar_vance",
+      "required_name": "Briar Vance",
+      "forbidden_names": [
+        "Needs verification"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "name_ethan_hayes",
+      "required_name": "Ethan Hayes",
+      "forbidden_names": [
+        "Needs verification"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "name_general_pinyin_chinese",
+      "required_name": "N/A",
+      "forbidden_names": [
+        "[\\u4e00-\\u9fa5]+",
+        "[a-zA-Z]*[\\u4e00-\\u9fa5]+[a-zA-Z]*",
+        "[A-Z][a-z]+[A-Z][a-z]+"
+      ],
+      "severity": "block",
+      "description": "No Chinese characters or pinyin names should appear in the adapted text, unless specifically approved for cultural terms. This rule is a general catch-all."
+    }
+  ],
+  "timeline_drift_rules": [
+    {
+      "id": "timeline_reveal_ning_guang_identity",
+      "description": "Kaelen Sterling's (legacy source/adaptation name's) true identity as a former General/Marquis's son (Ning Zhenguang) must not be revealed before Chapter 198.",
+      "severity": "block",
+      "check_method": "Manual review against chapter content and timeline."
+    },
+    {
+      "id": "timeline_reveal_su_liu_engagement",
+      "description": "Elara Willow's (legacy source/adaptation name's) engagement to Kaelen Sterling (legacy source/adaptation name) must not be revealed before Chapter 196.",
+      "severity": "block",
+      "check_method": "Manual review against chapter content and timeline."
+    },
+    {
+      "id": "timeline_reveal_chen_shi_remarriage",
+      "description": "Eleanor Maeve's (Chen Shi's) remarriage to legacy source/adaptation name must not be revealed before Chapter 287.",
+      "severity": "block",
+      "check_method": "Manual review against chapter content and timeline."
+    },
+    {
+      "id": "timeline_reveal_su_xiao_chen_ye_romance",
+      "description": "Piper Rose's (legacy source/adaptation name's) and Ethan Hayes's (Chen Ye's) romantic feelings and future marriage must not be revealed before Chapter 349-350.",
+      "severity": "block",
+      "check_method": "Manual review against chapter content and timeline."
+    },
+    {
+      "id": "timeline_reveal_su_changsheng_fate",
+      "description": "Arthur Blackwood's (legacy source/adaptation name's) ultimate fate (death by patricide) must not be revealed before Chapter 352.",
+      "severity": "block",
+      "check_method": "Manual review against chapter content and timeline."
+    },
+    {
+      "id": "timeline_reveal_su_chuntao_fate",
+      "description": "Briar Vance's (Su Chuntao's) ultimate fate (forced marriage to Tang Jiabao, later prostitution) must not be revealed before Chapters 352-354.",
+      "severity": "block",
+      "check_method": "Manual review against chapter content and timeline."
+    },
+    {
+      "id": "timeline_reveal_huang_shi_divorce",
+      "description": "Agnes Thorne's (Huang Shi's) divorce from Old Master Su must not be revealed before Chapter 184.",
+      "severity": "block",
+      "check_method": "Manual review against chapter content and timeline."
+    },
+    {
+      "id": "timeline_reveal_su_liu_leaving_clan",
+      "description": "Elara Willow (legacy source/adaptation name) and Piper Rose (legacy source/adaptation name) formally leaving the Su clan must not be revealed before Chapter 161.",
+      "severity": "block",
+      "check_method": "Manual review against chapter content and timeline."
+    }
+  ],
+  "relationship_lock_rules": [
+    {
+      "id": "rel_elara_eleanor_mother_daughter",
+      "description": "Elara Willow (legacy source/adaptation name) is the biological eldest daughter of Eleanor Maeve (Chen Shi). This relationship must be preserved.",
+      "severity": "block"
+    },
+    {
+      "id": "rel_elara_piper_sisters",
+      "description": "Elara Willow (legacy source/adaptation name) is the biological elder sister of Piper Rose (legacy source/adaptation name). This relationship must be preserved.",
+      "severity": "block"
+    },
+    {
+      "id": "rel_eleanor_arthur_ex_spouses",
+      "description": "Eleanor Maeve (Chen Shi) is the ex-wife of Arthur Blackwood (legacy source/adaptation name). Their divorce and estrangement must be maintained.",
+      "severity": "block"
+    },
+    {
+      "id": "rel_arthur_seraphina_spouses",
+      "description": "Arthur Blackwood (legacy source/adaptation name) is the husband of Seraphina Vance (Zhou Shi). This relationship must be preserved.",
+      "severity": "block"
+    },
+    {
+      "id": "rel_agnes_arthur_mother_son",
+      "description": "Agnes Thorne (Huang Shi) is the mother of Arthur Blackwood (legacy source/adaptation name). This relationship must be preserved.",
+      "severity": "block"
+    },
+    {
+      "id": "rel_seraphina_briar_mother_daughter",
+      "description": "Seraphina Vance (Zhou Shi) is the mother of Briar Vance (Su Chuntao). This relationship must be preserved.",
+      "severity": "block"
+    },
+    {
+      "id": "rel_elara_arthur_estranged_father_daughter",
+      "description": "Elara Willow (legacy source/adaptation name) has an estranged and antagonistic relationship with her biological father, Arthur Blackwood (legacy source/adaptation name). This dynamic must be maintained.",
+      "severity": "block"
+    },
+    {
+      "id": "rel_elara_agnes_estranged_grandmother_granddaughter",
+      "description": "Elara Willow (legacy source/adaptation name) has an estranged and antagonistic relationship with her paternal grandmother, Agnes Thorne (Huang Shi). This dynamic must be maintained.",
+      "severity": "block"
+    },
+    {
+      "id": "rel_kaelen_elara_romantic_interest",
+      "description": "Kaelen Sterling (legacy source/adaptation name) is the primary romantic interest of Elara Willow (legacy source/adaptation name). Their developing relationship must be preserved.",
+      "severity": "block"
+    },
+    {
+      "id": "rel_ethan_piper_romantic_interest",
+      "description": "Ethan Hayes (Chen Ye) develops romantic feelings for Piper Rose (legacy source/adaptation name), who is his adopted sister. This non-blood related sibling romance must be handled as per the source material.",
+      "severity": "major"
+    },
+    {
+      "id": "rel_eleanor_cao_kui_romantic_interest",
+      "description": "Eleanor Maeve (Chen Shi) develops a romantic interest with legacy source/adaptation name, leading to her remarriage. This progression must be preserved.",
+      "severity": "major"
+    }
+  ],
+  "commercial_quality_rules": [
+    {
+      "id": "commercial_hook",
+      "description": "Each chapter should start with a compelling hook to immediately engage the reader.",
+      "severity": "minor"
+    },
+    {
+      "id": "commercial_emotional_payoff",
+      "description": "Key emotional arcs and character struggles should have satisfying emotional payoffs within or across chapters.",
+      "severity": "minor"
+    },
+    {
+      "id": "commercial_cliffhanger",
+      "description": "Chapters should ideally end with a cliffhanger to encourage continued reading.",
+      "severity": "minor"
+    },
+    {
+      "id": "commercial_revenge_satisfaction",
+      "description": "Moments of revenge or justice against antagonists should be impactful and satisfying for the reader.",
+      "severity": "minor"
+    },
+    {
+      "id": "commercial_romance_tension",
+      "description": "The romantic tension between Elara Willow (legacy source/adaptation name) and Kaelen Sterling (legacy source/adaptation name) should be consistently present and engaging.",
+      "severity": "minor"
+    }
+  ],
+  "review_output_contract": {
+    "required_fields": [
+      "score",
+      "pass_fail",
+      "blocking_issues",
+      "major_issues",
+      "minor_issues",
+      "rewrite_instructions",
+      "name_lock_violations",
+      "timeline_drift_violations"
+    ]
+  }
+}

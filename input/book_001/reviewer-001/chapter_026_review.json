@@ -1,0 +1,35 @@
+{
+  "chapter_no": 26,
+  "review_mode": "rewrite",
+  "score": 7.8,
+  "can_be_final": false,
+  "main_problems": [
+    "The chapter's pacing is too slow for a rewrite, focusing heavily on dialogue and internal thoughts without significant plot advancement or action. The core conflict of Seraphina's resentment is established, but it feels drawn out.",
+    "The emotional intensity, while present in Seraphina's anger and Briar's anxiety, could be amplified. The dialogue, while functional, doesn't always hit the emotional highs expected for this genre.",
+    "The female-reader projection is somewhat limited. While readers can understand Seraphina's frustration and Briar's fear, the scene lacks a strong emotional beat that deeply immerses the reader in their experience or creates significant empathy.",
+    "The English naturalness is acceptable, but some phrasing feels slightly stilted or overly explanatory, hinting at translation origins.",
+    "The chapter doesn't fully leverage the commercial appeal of the genre. It's heavy on exposition about social status and past grievances, which can slow down reader engagement.",
+    "The cliffhanger is weak. Seraphina's final line, 'If she's dead, can she still be his wife?', while hinting at malice, lacks the immediate urgency or shock value needed to compel readers to the next chapter."
+  ],
+  "fix_suggestions": [
+    "Condense the dialogue and internal monologues. Focus on showing Seraphina's and Briar's desperation and anger through actions or more impactful dialogue rather than lengthy explanations of social hierarchy.",
+    "Amplify the emotional stakes. Instead of just stating their fears, show the consequences or potential consequences more vividly. For example, hint at specific instances of gossip or social exclusion.",
+    "Introduce a more active element. Perhaps Seraphina or Briar attempts a minor action driven by their frustration, even if it fails, to break up the dialogue-heavy scene.",
+    "Refine phrasing to sound more natural and less explanatory. Remove any sentences that feel like they are directly translating a concept rather than expressing it organically in English.",
+    "Ensure the dialogue reveals character and advances the plot more efficiently. Cut down on exposition about the 'concubine-born' status and focus on the immediate emotional impact and Seraphina's reaction.",
+    "Strengthen the cliffhanger by making Seraphina's intent more immediate or by introducing a new, unexpected threat or consequence."
+  ],
+  "commercial_strengths": [
+    "Establishes clear antagonists (Seraphina and Briar) with relatable motivations (fear of social status loss, resentment).",
+    "Explores the societal pressures and anxieties surrounding marriage and social standing, which are common themes in historical romance.",
+    "Highlights the protagonist's (Elara Willow's) impact on the antagonists, even when she is not physically present in the scene.",
+    "The dialogue, while needing refinement, does convey a sense of desperation and simmering malice."
+  ],
+  "risk_flags": [
+    "Pacing: The scene is dialogue-heavy and lacks significant plot progression, risking reader boredom.",
+    "Emotional Intensity: While anger is present, the scene could be more emotionally impactful and immersive for the target audience.",
+    "Cliffhanger Strength: The ending is not strong enough to create immediate next-chapter desire.",
+    "Translation Smell: Some phrasing feels slightly explanatory, suggesting potential translation artifacts."
+  ],
+  "final_decision": "Needs Rewrite"
+}

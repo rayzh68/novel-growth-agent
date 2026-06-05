@@ -1,0 +1,40 @@
+{
+  "facebook": {
+    "priority": 1,
+    "best_for": [
+      "emotion-driven hooks",
+      "interest targeting",
+      "A/B tests",
+      "landing page traffic"
+    ],
+    "avoid": [
+      "misleading claims",
+      "explicit adult bait",
+      "unauthorized IP comparisons"
+    ]
+  },
+  "instagram": {
+    "priority": 1,
+    "best_for": [
+      "visual covers",
+      "story/reels snippets",
+      "romance/fantasy aesthetics"
+    ],
+    "avoid": [
+      "long copy",
+      "unclear CTA"
+    ]
+  },
+  "tiktok": {
+    "priority": 2,
+    "best_for": [
+      "3-second hooks",
+      "emotional reversals",
+      "short video scripts"
+    ],
+    "avoid": [
+      "slow exposition",
+      "worldbuilding-heavy openings"
+    ]
+  }
+}

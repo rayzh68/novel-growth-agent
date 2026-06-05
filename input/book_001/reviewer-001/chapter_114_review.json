@@ -1,0 +1,41 @@
+{
+  "chapter_no": 114,
+  "review_mode": "rewrite",
+  "score": 8.2,
+  "can_be_final": true,
+  "main_problems": [
+    "The chapter lacks a strong cliffhanger or forward-pulling ending hook. It ends on a domestic scene and a flashback to the Thorne family argument, which, while providing contrast, does not create urgent next-chapter desire.",
+    "The emotional intensity is moderate. The chapter focuses on planning and domestic warmth, which is pleasant but lacks the high-stakes emotional conflict or tension that drives addiction in mobile serial fiction.",
+    "The pacing is slightly slow in the middle section, with extended descriptions of cooking and family dialogue that, while charming, could be tightened for mobile readability."
+  ],
+  "fix_suggestions": [
+    "Strengthen the ending hook. Instead of ending with Briar Vance's complaint, end on a line that creates immediate curiosity or tension, such as a hint of an impending threat, a discovery, or a decision that will have consequences in the next chapter.",
+    "Inject a moment of higher emotional stakes. For example, Elara could internally acknowledge a specific danger (e.g., the Thorne family's inevitable retaliation, a looming debt, or a hint of Kaelen's mysterious past) to raise the tension beneath the domestic surface.",
+    "Trim some of the cooking description and repetitive dialogue to quicken the pace and keep the reader's attention focused on forward momentum."
+  ],
+  "commercial_strengths": [
+    "Strong female lead agency: Elara is actively planning, executing, and leading her family's business venture, which is highly appealing to the target audience.",
+    "Warm found-family dynamics: The domestic scenes between Elara, Eleanor, and Piper are emotionally satisfying and reinforce the core commercial promise of a loving, independent family unit.",
+    "Clear business progression: The chapter shows concrete steps toward economic independence (buying the stall, experimenting with recipes), delivering on the 'rags-to-riches' and 'empire building' fantasy.",
+    "Effective contrast with antagonists: The brief scene at the Thorne manor provides satisfying 'justice porn' by showing the antagonists struggling without Elara's family, reinforcing the reader's investment in the protagonists' success.",
+    "Natural English prose: The writing is smooth, idiomatic, and free of translation smell, making it highly readable for the target market."
+  ],
+  "risk_flags": [
+    "No cliffhanger: The ending is too soft for a serialized chapter. Readers may not feel compelled to immediately read the next chapter.",
+    "Moderate emotional stakes: The chapter is low on direct conflict or danger, which could lead to a dip in reader engagement if this pattern continues."
+  ],
+  "final_decision": "The chapter is commercially strong and emotionally resonant, with excellent character work and natural English. However, the lack of a strong cliffhanger and slightly slow pacing in the middle prevent it from being a top-tier addictive chapter. It is acceptable for final production with minor revisions to the ending hook and pacing.",
+  "translation_smell": 9.5,
+  "localization": 9.0,
+  "dialogue": 8.5,
+  "pacing": 7.5,
+  "hook": 7.0,
+  "ending": 6.5,
+  "character_consistency": 9.0,
+  "story_bible_alignment": 9.0,
+  "name_consistency": 10.0,
+  "adapted_setting_consistency": 9.0,
+  "source_plot_integrity": 9.0,
+  "relationship_consistency": 9.0,
+  "overall": 8.2
+}

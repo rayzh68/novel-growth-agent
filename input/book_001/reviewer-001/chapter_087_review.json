@@ -1,0 +1,33 @@
+{
+  "chapter_no": 87,
+  "review_mode": "rewrite",
+  "score": 7.5,
+  "can_be_final": false,
+  "main_problems": [
+    "The chapter's pacing is too slow, with a lot of dialogue that doesn't advance the plot or character development significantly.",
+    "The emotional intensity is lacking; Eleanor's desperation and Elara's internal reaction feel muted.",
+    "The dialogue, while attempting to show the family's selfishness, feels repetitive and lacks sharp conflict.",
+    "The ending hook is weak; Eleanor's question at the end is not a strong cliffhanger.",
+    "The chapter leans heavily on dialogue, making it feel less engaging for a mobile-first audience.",
+    "The 'translation smell' is present due to the repetitive nature of the dialogue and the slightly unnatural flow of arguments."
+  ],
+  "fix_suggestions": [
+    "Condense the dialogue to make it more impactful. Focus on the core arguments and emotional beats rather than drawn-out exchanges.",
+    "Show, don't just tell, Eleanor's desperation. Incorporate more internal monologue or physical reactions that convey her pain and hopelessness.",
+    "Sharpen the conflict between Eleanor and her family. Make their refusal to help more pointed and less like a general complaint.",
+    "Strengthen the ending hook. Instead of a question, have Eleanor make a decisive statement or take a significant action that creates immediate next-chapter desire.",
+    "Incorporate more action or internal thought from Elara to break up the dialogue and provide emotional projection.",
+    "Refine the dialogue to sound more natural and less like a translated argument. Vary sentence structure and emotional tone."
+  ],
+  "commercial_strengths": [
+    "The core conflict of a woman seeking divorce against a selfish family is relatable and creates immediate emotional stakes.",
+    "Elara's internal commentary provides a modern, cynical perspective that resonates with the target audience.",
+    "The theme of family betrayal and the protagonist's growing independence aligns with the genre's appeal."
+  ],
+  "risk_flags": [
+    "Pacing: The chapter is too dialogue-heavy and slow, risking reader drop-off.",
+    "Emotional Intensity: The emotional impact of Eleanor's plight and Elara's reaction could be stronger.",
+    "Ending Hook: The current ending lacks the urgency needed to compel readers to the next chapter."
+  ],
+  "final_decision": "Needs Rewrite"
+}

@@ -1,0 +1,387 @@
+{
+  "version": "story_bible_text_guard_rules_v3_1",
+  "purpose": "Enforce production English adaptation locks, prevent source language/corrupted text, and guard against canon drift for project_001. Assumed mappings for required English names to original Chinese names are based on character roles and prominence in the merged extraction data, as adaptation_locks/names.md was not provided.",
+  "global_reject_patterns": [
+    {
+      "id": "cjk_ideographs",
+      "description": "Blocks all CJK Unified Ideographs (Chinese characters) from appearing in the adapted prose.",
+      "type": "unicode_or_regex_or_exact",
+      "pattern": "[\\u4e00-\\u9fff]",
+      "severity": "block",
+      "message": "Chinese characters are not permitted in the final adapted English prose."
+    },
+    {
+      "id": "unicode_replacement_char",
+      "description": "Blocks the Unicode replacement character, often indicative of mojibake or decoding errors.",
+      "type": "unicode_or_regex_or_exact",
+      "pattern": "\\uFFFD",
+      "severity": "block",
+      "message": "Unicode replacement character () indicates corrupted text and is not permitted."
+    },
+    {
+      "id": "common_control_chars",
+      "description": "Blocks common non-printable ASCII control characters that can indicate corrupted text.",
+      "type": "unicode_or_regex_or_exact",
+      "pattern": "[\\x00-\\x08\\x0B\\x0C\\x0E-\\x1F\\x7F]",
+      "severity": "block",
+      "message": "Non-printable control characters indicate corrupted text and are not permitted."
+    },
+    {
+      "id": "raw_extraction_placeholders",
+      "description": "Blocks known placeholders from raw extraction data that indicate censored or unadapted source text.",
+      "type": "unicode_or_regex_or_exact",
+      "pattern": "(?:pao|chuang|jian|ba|sao|liang)",
+      "severity": "block",
+      "message": "Raw extraction placeholders (e.g., pao, chuang, jian) are not permitted and indicate unadapted text."
+    }
+  ],
+  "required_name_locks": [
+    {
+      "lock_id": "elara_willow_protagonist",
+      "adapted_name": "Elara Willow",
+      "required_usage": "Protagonist's primary name.",
+      "forbidden_names": [
+        "Needs verification",
+        "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden."
+      ],
+      "relationship_lock": "Protagonist, daughter of Eleanor Maeve, sister of Piper Rose, fiancee of Kaelen Sterling.",
+      "severity": "block"
+    },
+    {
+      "lock_id": "kaelen_sterling_love_interest",
+      "adapted_name": "Kaelen Sterling",
+      "required_usage": "Love interest's primary name.",
+      "forbidden_names": [
+        "Needs verification",
+        "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden."
+      ],
+      "relationship_lock": "Love interest, hunter, former general, fiance of Elara Willow.",
+      "severity": "block"
+    },
+    {
+      "lock_id": "eleanor_maeve_mother",
+      "adapted_name": "Eleanor Maeve",
+      "required_usage": "Protagonist's mother's primary name.",
+      "forbidden_names": [
+        "Needs verification",
+        "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden.",
+        "Shi"
+      ],
+      "relationship_lock": "Elara Willow's biological mother, former wife of Arthur Blackwood, mother of Piper Rose, partner of legacy source/adaptation name.",
+      "severity": "block"
+    },
+    {
+      "lock_id": "piper_rose_sister",
+      "adapted_name": "Piper Rose",
+      "required_usage": "Protagonist's younger sister's primary name.",
+      "forbidden_names": [
+        "Needs verification",
+        "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden."
+      ],
+      "relationship_lock": "Elara Willow's younger sister, daughter of Eleanor Maeve and Arthur Blackwood, love interest of Ethan Hayes.",
+      "severity": "block"
+    },
+    {
+      "lock_id": "arthur_blackwood_father",
+      "adapted_name": "Arthur Blackwood",
+      "required_usage": "Antagonist father's primary name.",
+      "forbidden_names": [
+        "Needs verification",
+        "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden."
+      ],
+      "relationship_lock": "Elara Willow's biological father, former husband of Eleanor Maeve, husband of Seraphina Vance, father of Briar Vance.",
+      "severity": "block"
+    },
+    {
+      "lock_id": "agnes_thorne_grandmother",
+      "adapted_name": "Agnes Thorne",
+      "required_usage": "Antagonist grandmother's primary name.",
+      "forbidden_names": [
+        "Needs verification",
+        "Su Huangshi",
+        "Grandma Huang",
+        "Old Madam Huang"
+      ],
+      "relationship_lock": "Arthur Blackwood's mother, Elara Willow's paternal grandmother, matriarch of the old Su family.",
+      "severity": "block"
+    },
+    {
+      "lock_id": "seraphina_vance_stepmother",
+      "adapted_name": "Seraphina Vance",
+      "required_usage": "Antagonist stepmother's primary name.",
+      "forbidden_names": [
+        "Needs verification",
+        "Zhou Guizhi"
+      ],
+      "relationship_lock": "Arthur Blackwood's second wife, mother of Briar Vance, Elara Willow's stepmother.",
+      "severity": "block"
+    },
+    {
+      "lock_id": "briar_vance_stepsister",
+      "adapted_name": "Briar Vance",
+      "required_usage": "Antagonist stepsister's primary name.",
+      "forbidden_names": [
+        "Needs verification",
+        "Su Chuntao"
+      ],
+      "relationship_lock": "Daughter of Arthur Blackwood and Seraphina Vance, Elara Willow's half-sister.",
+      "severity": "block"
+    },
+    {
+      "lock_id": "ethan_hayes_helper",
+      "adapted_name": "Ethan Hayes",
+      "required_usage": "Helper/friend's primary name.",
+      "forbidden_names": [
+        "Needs verification",
+        "Chen Ye"
+      ],
+      "relationship_lock": "Elara Willow's helper/adopted family member, love interest of Piper Rose.",
+      "severity": "block"
+    }
+  ],
+  "forbidden_name_patterns": [
+    {
+      "id": "forbidden_pinyin_names_explicit",
+      "description": "Blocks specific pinyin/source names explicitly forbidden by project rules.",
+      "examples": [
+        "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden."
+      ],
+      "type": "unicode_or_regex_or_exact",
+      "pattern": "\\b(?:legacy source/adaptation name|legacy source/adaptation name|legacy source/adaptation name|legacy source/adaptation name|legacy source/adaptation name|legacy source/adaptation name|legacy source/adaptation name|legacy source/adaptation name)\\b",
+      "severity": "block",
+      "message": "Forbidden pinyin/source name detected. Use adapted English names only."
+    },
+    {
+      "id": "forbidden_chinese_surnames_shi",
+      "description": "All source-language names, Chinese-character names, mojibake variants, raw extraction aliases, and unapproved pinyin/source names are forbidden.",
+      "examples": [
+        "All legacy source names, pinyin names, Chinese-character names, mojibake variants, and obsolete adapted names are forbidden.",
+        "Huang-shi",
+        "Zhou-shi",
+        "Wang-shi",
+        "Zhang-shi",
+        "Xie-shi",
+        "Lu-shi",
+        "Jiang-shi",
+        "Guo-shi",
+        "Luo-shi",
+        "Zeng-shi",
+        "Wu-shi"
+      ],
+      "type": "unicode_or_regex_or_exact",
+      "pattern": "\\b(?:Chen|Huang|Zhou|Wang|Zhang|Xie|Lu|Jiang|Guo|Luo|Zeng|Wu)-shi\\b",
+      "severity": "block",
+      "message": "Traditional Chinese surname-shi format is not permitted. Use adapted English names."
+    },
+    {
+      "id": "forbidden_chinese_honorifics",
+      "description": "Blocks common Chinese honorifics/titles that should be adapted.",
+      "examples": [
+        "Needs verification"
+      ],
+      "type": "unicode_or_regex_or_exact",
+      "pattern": "\\b(?:|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||)\\b",
+      "severity": "block",
+      "message": "Forbidden Chinese honorific or title detected. Use adapted English equivalents."
+    }
+  ],
+  "relationship_drift_guards": [
+    {
+      "id": "elara_willow_mother_lock",
+      "character": "Elara Willow",
+      "must_remain": "Daughter of Eleanor Maeve",
+      "forbidden_drift": [
+        "Stepdaughter of Eleanor Maeve",
+        "Adopted daughter of Eleanor Maeve",
+        "Not related to Eleanor Maeve"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "eleanor_maeve_mother_of_elara",
+      "character": "Eleanor Maeve",
+      "must_remain": "Mother of Elara Willow",
+      "forbidden_drift": [
+        "Stepmother of Elara Willow",
+        "Adoptive mother of Elara Willow",
+        "Not related to Elara Willow"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "piper_rose_sister_of_elara",
+      "character": "Piper Rose",
+      "must_remain": "Younger sister of Elara Willow",
+      "forbidden_drift": [
+        "Half-sister of Elara Willow",
+        "Stepsister of Elara Willow",
+        "Cousin of Elara Willow",
+        "Not related to Elara Willow"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "kaelen_sterling_fiance_of_elara",
+      "character": "Kaelen Sterling",
+      "must_remain": "Fiance of Elara Willow",
+      "forbidden_drift": [
+        "Brother of Elara Willow",
+        "Friend of Elara Willow",
+        "Enemy of Elara Willow",
+        "Married to another",
+        "Not engaged to Elara Willow"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "arthur_blackwood_father_of_elara",
+      "character": "Arthur Blackwood",
+      "must_remain": "Biological father of Elara Willow (estranged)",
+      "forbidden_drift": [
+        "Adoptive father of Elara Willow",
+        "Not related to Elara Willow",
+        "Kind/supportive towards Elara Willow"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "agnes_thorne_grandmother_of_elara",
+      "character": "Agnes Thorne",
+      "must_remain": "Paternal grandmother of Elara Willow (antagonistic)",
+      "forbidden_drift": [
+        "Maternal grandmother of Elara Willow",
+        "Kind/supportive towards Elara Willow",
+        "Not related to Elara Willow"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "seraphina_vance_stepmother_of_elara",
+      "character": "Seraphina Vance",
+      "must_remain": "Stepmother of Elara Willow (antagonistic)",
+      "forbidden_drift": [
+        "Biological mother of Elara Willow",
+        "Kind/supportive towards Elara Willow",
+        "Not related to Elara Willow"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "briar_vance_half_sister_of_elara",
+      "character": "Briar Vance",
+      "must_remain": "Half-sister of Elara Willow (antagonistic)",
+      "forbidden_drift": [
+        "Full sister of Elara Willow",
+        "Stepsister of Elara Willow",
+        "Cousin of Elara Willow",
+        "Kind/supportive towards Elara Willow",
+        "Not related to Elara Willow"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "ethan_hayes_love_interest_of_piper",
+      "character": "Ethan Hayes",
+      "must_remain": "Love interest of Piper Rose (adopted sibling relationship)",
+      "forbidden_drift": [
+        "Brother of Piper Rose (blood-related)",
+        "Not interested in Piper Rose",
+        "Interested in Elara Willow"
+      ],
+      "severity": "block"
+    },
+    {
+      "id": "elara_willow_monogamy_stance",
+      "character": "Elara Willow",
+      "must_remain": "Insistent on monogamy ('')",
+      "forbidden_drift": [
+        "Accepts concubinage",
+        "Considers polygyny"
+      ],
+      "severity": "block"
+    }
+  ],
+  "reveal_timing_guards": [
+    {
+      "id": "ning_guang_general_reveal",
+      "secret_or_reveal": "Kaelen Sterling's (legacy source/adaptation name's) identity as a former disgraced General Ning Zhenguang.",
+      "allowed_after": "Chapter 198",
+      "forbidden_before": "Chapter 198",
+      "severity": "block"
+    },
+    {
+      "id": "song_xiao_feelings_reveal",
+      "secret_or_reveal": "legacy source/adaptation name's romantic feelings for Elara Willow.",
+      "allowed_after": "Chapter 199",
+      "forbidden_before": "Chapter 199",
+      "severity": "block"
+    },
+    {
+      "id": "chen_family_exploitation_reveal",
+      "secret_or_reveal": "Eleanor Maeve's maternal family (Chen family) plotting to exploit Elara Willow's wealth.",
+      "allowed_after": "Chapter 200",
+      "forbidden_before": "Chapter 200",
+      "severity": "block"
+    },
+    {
+      "id": "kaelen_sterling_noble_background_reveal",
+      "secret_or_reveal": "Kaelen Sterling's (legacy source/adaptation name's) noble and military background as a Marquis's son.",
+      "allowed_after": "Chapter 225",
+      "forbidden_before": "Chapter 225",
+      "severity": "block"
+    },
+    {
+      "id": "ethan_hayes_piper_rose_feelings_reveal",
+      "secret_or_reveal": "Ethan Hayes's romantic feelings for Piper Rose (his adopted sister).",
+      "allowed_after": "Chapter 349",
+      "forbidden_before": "Chapter 349",
+      "severity": "block"
+    },
+    {
+      "id": "arthur_blackwood_death_reveal",
+      "secret_or_reveal": "Arthur Blackwood's death by patricide.",
+      "allowed_after": "Chapter 352",
+      "forbidden_before": "Chapter 352",
+      "severity": "block"
+    },
+    {
+      "id": "briar_vance_fate_reveal",
+      "secret_or_reveal": "Briar Vance's fate as a prostitute.",
+      "allowed_after": "Chapter 354",
+      "forbidden_before": "Chapter 354",
+      "severity": "block"
+    }
+  ],
+  "style_safety_guards": [
+    {
+      "id": "anachronistic_modern_slang",
+      "description": "All source-language names, Chinese-character names, mojibake variants, raw extraction aliases, and unapproved pinyin/source names are forbidden.",
+      "severity": "warn",
+      "message": "Anachronistic modern slang or concepts detected. Ensure consistency with historical setting or adapt carefully."
+    },
+    {
+      "id": "derogatory_terms_cultural_sensitivity",
+      "description": "Warns against the use of highly derogatory or culturally sensitive terms (e.g., '', '', '', '', '', '', '', '', '') without proper contextualization or adaptation for target audience.",
+      "severity": "warn",
+      "message": "Potentially offensive or culturally sensitive derogatory term detected. Review for appropriate adaptation and context."
+    },
+    {
+      "id": "explicit_violence_sexual_content",
+      "description": "Warns against overly explicit descriptions of violence (e.g., rape, infanticide, dismemberment, domestic abuse) or sexual content (e.g., non-consensual acts, graphic intimacy) that may exceed target audience guidelines or misrepresent character intent.",
+      "severity": "warn",
+      "message": "Explicit violence or sexual content detected. Review for target audience appropriateness and accurate portrayal of character intent."
+    },
+    {
+      "id": "monogamy_polygyny_clash",
+      "description": "Warns when Elara Willow's strong stance on monogamy clashes with traditional polygyny, ensuring her character's core trait is maintained without softening or forced acceptance.",
+      "severity": "warn",
+      "message": "Monogamy vs. polygyny conflict detected. Ensure Elara Willow's stance is accurately represented and not undermined."
+    },
+    {
+      "id": "unfilial_protagonist_actions",
+      "description": "Warns when Elara Willow's actions (e.g., ruthless revenge, disowning parents, framing) might be perceived as excessively cruel or unfilial by readers expecting traditional 'good protagonist' behavior, ensuring her 'not a shengmu' trait is clear.",
+      "severity": "warn",
+      "message": "Protagonist's actions may be perceived as unfilial or overly ruthless. Ensure character motivations and 'not a shengmu' trait are clear."
+    }
+  ]
+}

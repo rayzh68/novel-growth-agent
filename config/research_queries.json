@@ -1,0 +1,15 @@
+﻿{
+  "book_test": {
+    "primary_genre": "revenge_romance",
+    "target_channel": "facebook",
+    "queries": [
+      "revenge romance",
+      "strong female lead romance",
+      "betrayal romance",
+      "abandoned heroine romance",
+      "female revenge novel"
+    ],
+    "providers": ["facebook", "google", "reddit"],
+    "limit_per_query": 10
+  }
+}

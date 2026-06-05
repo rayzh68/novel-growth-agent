@@ -1,0 +1,14 @@
+﻿{
+  "events": [
+    "landing_view",
+    "start_reading_click",
+    "read_start",
+    "chapter_1_finish",
+    "chapter_3_finish",
+    "gate_view",
+    "unlock_click",
+    "ad_watch_start",
+    "ad_watch_complete",
+    "subscribe_click"
+  ]
+}

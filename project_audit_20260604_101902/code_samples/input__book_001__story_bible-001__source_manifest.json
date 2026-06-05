@@ -1,0 +1,77 @@
+﻿{
+  "project_id": "project_001",
+  "input_mode": "volume_files",
+  "volume_files_used": [
+    {
+      "path": "D:\\novel-mvp\\projects\\project_001\\analysis\\volumes\\volume_01_1_50.md",
+      "name": "volume_01_1_50.md",
+      "chapter_start": 1,
+      "chapter_end": 50,
+      "chars": 56431,
+      "split_required": false
+    },
+    {
+      "path": "D:\\novel-mvp\\projects\\project_001\\analysis\\volumes\\volume_02_51_100.md",
+      "name": "volume_02_51_100.md",
+      "chapter_start": 51,
+      "chapter_end": 100,
+      "chars": 69790,
+      "split_required": false
+    },
+    {
+      "path": "D:\\novel-mvp\\projects\\project_001\\analysis\\volumes\\volume_03_101_150.md",
+      "name": "volume_03_101_150.md",
+      "chapter_start": 101,
+      "chapter_end": 150,
+      "chars": 145458,
+      "split_required": true
+    },
+    {
+      "path": "D:\\novel-mvp\\projects\\project_001\\analysis\\volumes\\volume_04_151_200.md",
+      "name": "volume_04_151_200.md",
+      "chapter_start": 151,
+      "chapter_end": 200,
+      "chars": 151612,
+      "split_required": true
+    },
+    {
+      "path": "D:\\novel-mvp\\projects\\project_001\\analysis\\volumes\\volume_05_201_250.md",
+      "name": "volume_05_201_250.md",
+      "chapter_start": 201,
+      "chapter_end": 250,
+      "chars": 149445,
+      "split_required": true
+    },
+    {
+      "path": "D:\\novel-mvp\\projects\\project_001\\analysis\\volumes\\volume_06_251_300.md",
+      "name": "volume_06_251_300.md",
+      "chapter_start": 251,
+      "chapter_end": 300,
+      "chars": 161713,
+      "split_required": true
+    },
+    {
+      "path": "D:\\novel-mvp\\projects\\project_001\\analysis\\volumes\\volume_07_301_350.md",
+      "name": "volume_07_301_350.md",
+      "chapter_start": 301,
+      "chapter_end": 350,
+      "chars": 161669,
+      "split_required": true
+    },
+    {
+      "path": "D:\\novel-mvp\\projects\\project_001\\analysis\\volumes\\volume_08_351_367.md",
+      "name": "volume_08_351_367.md",
+      "chapter_start": 351,
+      "chapter_end": 367,
+      "chars": 80362,
+      "split_required": false
+    }
+  ],
+  "volume_file_count": 8,
+  "batch_count": 13,
+  "batch_size": 50,
+  "builder_mode": "build_pack",
+  "force_rebuild": false,
+  "chapter_min": 1,
+  "chapter_max": 367
+}

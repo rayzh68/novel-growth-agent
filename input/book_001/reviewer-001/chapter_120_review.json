@@ -1,0 +1,33 @@
+{
+  "chapter_no": 120,
+  "review_mode": "rewrite",
+  "score": 8.2,
+  "can_be_final": true,
+  "main_problems": [
+    "Minor translation smell in a few phrases like 'The aroma alone was enough to make mouths water' and 'Her voice dripping with envy' which feel slightly stiff.",
+    "The opening hook is descriptive rather than emotionally urgent; could be stronger to immediately hook the reader.",
+    "Some dialogue tags are slightly repetitive (e.g., 'chirped', 'whined', 'seethed') which can feel a bit overdone."
+  ],
+  "fix_suggestions": [
+    "Tighten the opening to create immediate emotional tension or curiosity rather than starting with general description.",
+    "Replace a few of the more ornate dialogue tags with simpler 'said' or action beats to improve natural flow.",
+    "Smooth out phrases like 'Her voice dripping with envy' to more natural English (e.g., 'Her voice was thick with envy').",
+    "Consider adding a brief internal thought from Elara at the end to deepen emotional projection and forward pull."
+  ],
+  "commercial_strengths": [
+    "Strong emotional conflict within the Thorne family, showing jealousy, resentment, and internal strife.",
+    "Clear business success beat (pork buns selling out) that satisfies the rags-to-riches fantasy.",
+    "Effective use of multiple POVs (Agnes, Penelope, Seraphina, Briar) to show the antagonists' bitter reactions.",
+    "Piper's confident sales pitch and Eleanor's flushed, happy labor reinforce the found-family warmth.",
+    "The scene with Jasper demanding buns and Seraphina's violent reaction creates high emotional intensity and reader satisfaction.",
+    "Ending with Seraphina fainting provides a strong cliffhanger that creates next-chapter desire."
+  ],
+  "risk_flags": [
+    "No name drift detected. All names match Story Bible locks.",
+    "No hidden identity revealed prematurely.",
+    "No relationship drift detected.",
+    "No Chinese webnovel phrasing or pinyin contamination.",
+    "Setting and timeline consistent with Story Bible (early business phase, still in Oakhaven Village/Whitewater Town)."
+  ],
+  "final_decision": "Accept with minor revisions. The chapter is commercially strong, emotionally engaging, and consistent with the Story Bible. The few translation-smell phrases can be smoothed in final polish. Score 8.2 is above the 7.5 threshold and the chapter is production-ready after minor fixes."
+}

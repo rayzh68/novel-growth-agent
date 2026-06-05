@@ -1,0 +1,916 @@
+{
+  "book_id": "book_001",
+  "created_at": "2026-06-04T00:38:22.113727+00:00",
+  "source_dirs": {
+    "story_bible": "input/book_001/story_bible-001",
+    "reader": "input/book_001/reader-001",
+    "reviewer": "input/book_001/reviewer-001",
+    "market_research": "output/market_research/book_001_market_research.json"
+  },
+  "story_seeds": [
+    {
+      "signal": "su jinfeng",
+      "phrase": "su jinfeng",
+      "count": 58
+    },
+    {
+      "signal": "su jinquan",
+      "phrase": "su jinquan",
+      "count": 42
+    },
+    {
+      "signal": "su fusheng",
+      "phrase": "su fusheng",
+      "count": 21
+    },
+    {
+      "signal": "hu sandao",
+      "phrase": "hu sandao",
+      "count": 17
+    },
+    {
+      "signal": "su xizi",
+      "phrase": "su xizi",
+      "count": 14
+    },
+    {
+      "signal": "su ancestral",
+      "phrase": "su ancestral",
+      "count": 14
+    },
+    {
+      "signal": "donkey-hide gelatin",
+      "phrase": "donkey-hide gelatin",
+      "count": 14
+    },
+    {
+      "signal": "batch reports",
+      "phrase": "batch reports",
+      "count": 13
+    },
+    {
+      "signal": "provided batch",
+      "phrase": "provided batch",
+      "count": 12
+    },
+    {
+      "signal": "provided batch reports",
+      "phrase": "provided batch reports",
+      "count": 12
+    },
+    {
+      "signal": "wu marquise",
+      "phrase": "wu marquise",
+      "count": 11
+    },
+    {
+      "signal": "insufficient provided",
+      "phrase": "insufficient provided",
+      "count": 11
+    },
+    {
+      "signal": "insufficient provided batch",
+      "phrase": "insufficient provided batch",
+      "count": 11
+    },
+    {
+      "signal": "insufficient provided batch reports",
+      "phrase": "insufficient provided batch reports",
+      "count": 11
+    },
+    {
+      "signal": "gelatin workshop",
+      "phrase": "gelatin workshop",
+      "count": 10
+    },
+    {
+      "signal": "donkey-hide gelatin workshop",
+      "phrase": "donkey-hide gelatin workshop",
+      "count": 10
+    },
+    {
+      "signal": "villain su",
+      "phrase": "villain su",
+      "count": 9
+    },
+    {
+      "signal": "public humiliation",
+      "phrase": "public humiliation",
+      "count": 8
+    },
+    {
+      "signal": "li cuihua",
+      "phrase": "li cuihua",
+      "count": 8
+    },
+    {
+      "signal": "block manual",
+      "phrase": "block manual",
+      "count": 8
+    },
+    {
+      "signal": "manual against",
+      "phrase": "manual against",
+      "count": 8
+    },
+    {
+      "signal": "block manual against",
+      "phrase": "block manual against",
+      "count": 8
+    },
+    {
+      "signal": "jinfeng su",
+      "phrase": "jinfeng su",
+      "count": 7
+    },
+    {
+      "signal": "su jinfeng su",
+      "phrase": "su jinfeng su",
+      "count": 7
+    },
+    {
+      "signal": "explicitly stated",
+      "phrase": "explicitly stated",
+      "count": 7
+    },
+    {
+      "signal": "should fully",
+      "phrase": "should fully",
+      "count": 7
+    },
+    {
+      "signal": "block primary",
+      "phrase": "block primary",
+      "count": 7
+    },
+    {
+      "signal": "abusive su",
+      "phrase": "abusive su",
+      "count": 6
+    },
+    {
+      "signal": "su su jinfeng",
+      "phrase": "su su jinfeng",
+      "count": 6
+    },
+    {
+      "signal": "should explicitly",
+      "phrase": "should explicitly",
+      "count": 6
+    }
+  ],
+  "reader_signals": [
+    {
+      "signal": "happens next",
+      "phrase": "happens next",
+      "count": 20
+    },
+    {
+      "signal": "absolutely delivered",
+      "phrase": "absolutely delivered",
+      "count": 17
+    },
+    {
+      "signal": "absolutely perfect",
+      "phrase": "absolutely perfect",
+      "count": 16
+    },
+    {
+      "signal": "incredibly addictive",
+      "phrase": "incredibly addictive",
+      "count": 14
+    },
+    {
+      "signal": "incredibly satisfying",
+      "phrase": "incredibly satisfying",
+      "count": 14
+    },
+    {
+      "signal": "chef kiss",
+      "phrase": "chef kiss",
+      "count": 13
+    },
+    {
+      "signal": "surge anger",
+      "phrase": "surge anger",
+      "count": 13
+    },
+    {
+      "signal": "edge seat",
+      "phrase": "edge seat",
+      "count": 13
+    },
+    {
+      "signal": "oh god",
+      "phrase": "oh god",
+      "count": 12
+    },
+    {
+      "signal": "huge wave",
+      "phrase": "huge wave",
+      "count": 11
+    },
+    {
+      "signal": "completely hooked",
+      "phrase": "completely hooked",
+      "count": 11
+    },
+    {
+      "signal": "im dying",
+      "phrase": "im dying",
+      "count": 11
+    },
+    {
+      "signal": "heart pounding",
+      "phrase": "heart pounding",
+      "count": 10
+    },
+    {
+      "signal": "im completely",
+      "phrase": "im completely",
+      "count": 10
+    },
+    {
+      "signal": "huge surge",
+      "phrase": "huge surge",
+      "count": 10
+    },
+    {
+      "signal": "quick thinking",
+      "phrase": "quick thinking",
+      "count": 10
+    },
+    {
+      "signal": "im ready",
+      "phrase": "im ready",
+      "count": 9
+    },
+    {
+      "signal": "absolutely perfectly",
+      "phrase": "absolutely perfectly",
+      "count": 9
+    },
+    {
+      "signal": "ending left",
+      "phrase": "ending left",
+      "count": 9
+    },
+    {
+      "signal": "heart ached",
+      "phrase": "heart ached",
+      "count": 8
+    },
+    {
+      "signal": "gut punch",
+      "phrase": "gut punch",
+      "count": 8
+    },
+    {
+      "signal": "absolutely fantastic",
+      "phrase": "absolutely fantastic",
+      "count": 8
+    },
+    {
+      "signal": "im here",
+      "phrase": "im here",
+      "count": 8
+    },
+    {
+      "signal": "absolute best",
+      "phrase": "absolute best",
+      "count": 8
+    },
+    {
+      "signal": "best part",
+      "phrase": "best part",
+      "count": 8
+    },
+    {
+      "signal": "perfect example",
+      "phrase": "perfect example",
+      "count": 8
+    },
+    {
+      "signal": "cant wait",
+      "phrase": "cant wait",
+      "count": 8
+    },
+    {
+      "signal": "pure gold",
+      "phrase": "pure gold",
+      "count": 7
+    },
+    {
+      "signal": "perfectly sets",
+      "phrase": "perfectly sets",
+      "count": 7
+    },
+    {
+      "signal": "wave relief",
+      "phrase": "wave relief",
+      "count": 7
+    }
+  ],
+  "review_signals": [
+    {
+      "signal": "creates immediate",
+      "phrase": "creates immediate",
+      "count": 18
+    },
+    {
+      "signal": "scene effectively",
+      "phrase": "scene effectively",
+      "count": 18
+    },
+    {
+      "signal": "effectively portrays",
+      "phrase": "effectively portrays",
+      "count": 17
+    },
+    {
+      "signal": "immediate tension",
+      "phrase": "immediate tension",
+      "count": 10
+    },
+    {
+      "signal": "create immediate",
+      "phrase": "create immediate",
+      "count": 9
+    },
+    {
+      "signal": "intelligence resourcefulness",
+      "phrase": "intelligence resourcefulness",
+      "count": 9
+    },
+    {
+      "signal": "quick thinking",
+      "phrase": "quick thinking",
+      "count": 9
+    },
+    {
+      "signal": "scene effectively portrays",
+      "phrase": "scene effectively portrays",
+      "count": 8
+    },
+    {
+      "signal": "creating immediate",
+      "phrase": "creating immediate",
+      "count": 8
+    },
+    {
+      "signal": "strategic thinking",
+      "phrase": "strategic thinking",
+      "count": 8
+    },
+    {
+      "signal": "highly appealing",
+      "phrase": "highly appealing",
+      "count": 8
+    },
+    {
+      "signal": "good moves",
+      "phrase": "good moves",
+      "count": 7
+    },
+    {
+      "signal": "intelligence strategic",
+      "phrase": "intelligence strategic",
+      "count": 7
+    },
+    {
+      "signal": "selling point",
+      "phrase": "selling point",
+      "count": 7
+    },
+    {
+      "signal": "forward momentum",
+      "phrase": "forward momentum",
+      "count": 6
+    },
+    {
+      "signal": "anticipation next",
+      "phrase": "anticipation next",
+      "count": 6
+    },
+    {
+      "signal": "emotionally resonant",
+      "phrase": "emotionally resonant",
+      "count": 6
+    },
+    {
+      "signal": "effectively sets",
+      "phrase": "effectively sets",
+      "count": 6
+    },
+    {
+      "signal": "sets future",
+      "phrase": "sets future",
+      "count": 6
+    },
+    {
+      "signal": "introduction adds",
+      "phrase": "introduction adds",
+      "count": 6
+    },
+    {
+      "signal": "forward pull",
+      "phrase": "forward pull",
+      "count": 6
+    },
+    {
+      "signal": "intelligence strategic thinking",
+      "phrase": "intelligence strategic thinking",
+      "count": 5
+    },
+    {
+      "signal": "emotionally charged",
+      "phrase": "emotionally charged",
+      "count": 5
+    },
+    {
+      "signal": "next-chapter desire",
+      "phrase": "next-chapter desire",
+      "count": 5
+    },
+    {
+      "signal": "showcasing intelligence",
+      "phrase": "showcasing intelligence",
+      "count": 5
+    },
+    {
+      "signal": "societal norms",
+      "phrase": "societal norms",
+      "count": 5
+    },
+    {
+      "signal": "highly relatable",
+      "phrase": "highly relatable",
+      "count": 4
+    },
+    {
+      "signal": "creating sympathy",
+      "phrase": "creating sympathy",
+      "count": 4
+    },
+    {
+      "signal": "against abusive",
+      "phrase": "against abusive",
+      "count": 4
+    },
+    {
+      "signal": "future conflicts",
+      "phrase": "future conflicts",
+      "count": 4
+    }
+  ],
+  "risk_signals": [
+    {
+      "signal": "translation smell",
+      "phrase": "translation smell",
+      "count": 32
+    },
+    {
+      "signal": "handled carefully",
+      "phrase": "handled carefully",
+      "count": 27
+    },
+    {
+      "signal": "ending weak",
+      "phrase": "ending weak",
+      "count": 22
+    },
+    {
+      "signal": "bit direct",
+      "phrase": "bit direct",
+      "count": 21
+    },
+    {
+      "signal": "slows down",
+      "phrase": "slows down",
+      "count": 20
+    },
+    {
+      "signal": "emotionally charged",
+      "phrase": "emotionally charged",
+      "count": 18
+    },
+    {
+      "signal": "doesnt create",
+      "phrase": "doesnt create",
+      "count": 18
+    },
+    {
+      "signal": "slightly unnatural",
+      "phrase": "slightly unnatural",
+      "count": 17
+    },
+    {
+      "signal": "slightly repetitive",
+      "phrase": "slightly repetitive",
+      "count": 14
+    },
+    {
+      "signal": "slightly rushed",
+      "phrase": "slightly rushed",
+      "count": 13
+    },
+    {
+      "signal": "slightly abrupt",
+      "phrase": "slightly abrupt",
+      "count": 13
+    },
+    {
+      "signal": "female-reader projection",
+      "phrase": "female-reader projection",
+      "count": 13
+    },
+    {
+      "signal": "relies heavily",
+      "phrase": "relies heavily",
+      "count": 12
+    },
+    {
+      "signal": "occasionally bit",
+      "phrase": "occasionally bit",
+      "count": 12
+    },
+    {
+      "signal": "middle section",
+      "phrase": "middle section",
+      "count": 12
+    },
+    {
+      "signal": "bit rushed",
+      "phrase": "bit rushed",
+      "count": 11
+    },
+    {
+      "signal": "bit on-the-nose",
+      "phrase": "bit on-the-nose",
+      "count": 11
+    },
+    {
+      "signal": "generally good",
+      "phrase": "generally good",
+      "count": 11
+    },
+    {
+      "signal": "bit abrupt",
+      "phrase": "bit abrupt",
+      "count": 10
+    },
+    {
+      "signal": "functional lacks",
+      "phrase": "functional lacks",
+      "count": 10
+    },
+    {
+      "signal": "doesnt fully",
+      "phrase": "doesnt fully",
+      "count": 9
+    },
+    {
+      "signal": "intensity present",
+      "phrase": "intensity present",
+      "count": 9
+    },
+    {
+      "signal": "functional occasionally",
+      "phrase": "functional occasionally",
+      "count": 9
+    },
+    {
+      "signal": "lacks sharp",
+      "phrase": "lacks sharp",
+      "count": 9
+    },
+    {
+      "signal": "functional emotionally",
+      "phrase": "functional emotionally",
+      "count": 8
+    },
+    {
+      "signal": "decent stronger",
+      "phrase": "decent stronger",
+      "count": 8
+    },
+    {
+      "signal": "rather natural",
+      "phrase": "rather natural",
+      "count": 8
+    },
+    {
+      "signal": "functional occasionally bit",
+      "phrase": "functional occasionally bit",
+      "count": 8
+    },
+    {
+      "signal": "immediate urgency",
+      "phrase": "immediate urgency",
+      "count": 8
+    },
+    {
+      "signal": "next-chapter desire",
+      "phrase": "next-chapter desire",
+      "count": 8
+    }
+  ],
+  "research_queries": [
+    "happens next reader discussion",
+    "happens next web novel audience",
+    "happens next online fiction audience",
+    "absolutely delivered reader discussion",
+    "absolutely delivered web novel audience",
+    "absolutely delivered online fiction audience",
+    "absolutely perfect reader discussion",
+    "absolutely perfect web novel audience",
+    "absolutely perfect online fiction audience",
+    "incredibly addictive reader discussion",
+    "incredibly addictive web novel audience",
+    "incredibly addictive online fiction audience",
+    "incredibly satisfying reader discussion",
+    "incredibly satisfying web novel audience",
+    "incredibly satisfying online fiction audience",
+    "chef kiss reader discussion",
+    "chef kiss web novel audience",
+    "chef kiss online fiction audience",
+    "surge anger reader discussion",
+    "surge anger web novel audience",
+    "surge anger online fiction audience",
+    "edge seat reader discussion",
+    "edge seat web novel audience",
+    "edge seat online fiction audience",
+    "oh god reader discussion",
+    "oh god web novel audience",
+    "oh god online fiction audience",
+    "huge wave reader discussion",
+    "huge wave web novel audience",
+    "huge wave online fiction audience",
+    "completely hooked reader discussion",
+    "completely hooked web novel audience",
+    "completely hooked online fiction audience",
+    "im dying reader discussion",
+    "im dying web novel audience",
+    "im dying online fiction audience",
+    "heart pounding reader discussion",
+    "heart pounding web novel audience",
+    "heart pounding online fiction audience",
+    "im completely reader discussion"
+  ],
+  "research_query_plan": [
+    {
+      "source": "reader_signal",
+      "signal": "happens next",
+      "query": "happens next reader discussion"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "happens next",
+      "query": "happens next web novel audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "happens next",
+      "query": "happens next online fiction audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "absolutely delivered",
+      "query": "absolutely delivered reader discussion"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "absolutely delivered",
+      "query": "absolutely delivered web novel audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "absolutely delivered",
+      "query": "absolutely delivered online fiction audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "absolutely perfect",
+      "query": "absolutely perfect reader discussion"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "absolutely perfect",
+      "query": "absolutely perfect web novel audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "absolutely perfect",
+      "query": "absolutely perfect online fiction audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "incredibly addictive",
+      "query": "incredibly addictive reader discussion"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "incredibly addictive",
+      "query": "incredibly addictive web novel audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "incredibly addictive",
+      "query": "incredibly addictive online fiction audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "incredibly satisfying",
+      "query": "incredibly satisfying reader discussion"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "incredibly satisfying",
+      "query": "incredibly satisfying web novel audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "incredibly satisfying",
+      "query": "incredibly satisfying online fiction audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "chef kiss",
+      "query": "chef kiss reader discussion"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "chef kiss",
+      "query": "chef kiss web novel audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "chef kiss",
+      "query": "chef kiss online fiction audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "surge anger",
+      "query": "surge anger reader discussion"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "surge anger",
+      "query": "surge anger web novel audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "surge anger",
+      "query": "surge anger online fiction audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "edge seat",
+      "query": "edge seat reader discussion"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "edge seat",
+      "query": "edge seat web novel audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "edge seat",
+      "query": "edge seat online fiction audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "oh god",
+      "query": "oh god reader discussion"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "oh god",
+      "query": "oh god web novel audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "oh god",
+      "query": "oh god online fiction audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "huge wave",
+      "query": "huge wave reader discussion"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "huge wave",
+      "query": "huge wave web novel audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "huge wave",
+      "query": "huge wave online fiction audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "completely hooked",
+      "query": "completely hooked reader discussion"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "completely hooked",
+      "query": "completely hooked web novel audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "completely hooked",
+      "query": "completely hooked online fiction audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "im dying",
+      "query": "im dying reader discussion"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "im dying",
+      "query": "im dying web novel audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "im dying",
+      "query": "im dying online fiction audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "heart pounding",
+      "query": "heart pounding reader discussion"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "heart pounding",
+      "query": "heart pounding web novel audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "heart pounding",
+      "query": "heart pounding online fiction audience"
+    },
+    {
+      "source": "reader_signal",
+      "signal": "im completely",
+      "query": "im completely reader discussion"
+    }
+  ],
+  "core_themes": [],
+  "market_drivers": [
+    {
+      "driver": "chef kiss",
+      "source": "reader_signal",
+      "score": 856,
+      "source_signal": {
+        "signal": "chef kiss",
+        "phrase": "chef kiss",
+        "count": 13
+      },
+      "matched_market_patterns": [
+        {
+          "market_pattern": "chef kiss",
+          "overlap": 2,
+          "score": 422
+        },
+        {
+          "market_pattern": "chef kiss",
+          "overlap": 2,
+          "score": 388
+        }
+      ],
+      "story_evidence": [],
+      "review_evidence": [],
+      "risk_evidence": []
+    },
+    {
+      "driver": "happens next",
+      "source": "reader_signal",
+      "score": 332,
+      "source_signal": {
+        "signal": "happens next",
+        "phrase": "happens next",
+        "count": 20
+      },
+      "matched_market_patterns": [
+        {
+          "market_pattern": "happens next",
+          "overlap": 2,
+          "score": 278
+        }
+      ],
+      "story_evidence": [],
+      "review_evidence": [
+        {
+          "review_signal": "anticipation next",
+          "overlap": 1,
+          "score": 6
+        }
+      ],
+      "risk_evidence": []
+    }
+  ]
+}
