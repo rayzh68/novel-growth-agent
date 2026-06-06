@@ -1,6 +1,7 @@
 ﻿from __future__ import annotations
 
 import argparse
+import json
 import shutil
 import sys
 from pathlib import Path
@@ -67,6 +68,44 @@ def cmd_import_report(args: argparse.Namespace) -> None:
 def cmd_export_feedback(args: argparse.Namespace) -> None:
     argv = ["--book", args.book, "--target", args.target]
     _run_module_main("scripts.export_feedback", argv)
+
+
+
+def cmd_validate(args: argparse.Namespace) -> None:
+    from core.commercial_validation import validate_commercial_value
+
+    book = args.book
+    root = ROOT / "input" / book / "sample_chapters"
+
+    chapters = []
+    if root.exists():
+        for path in sorted(root.glob("chapter_*.md")):
+            chapters.append(path.read_text(encoding="utf-8-sig", errors="ignore"))
+
+    if not chapters:
+        raise SystemExit(f"No sample chapters found under: {root}")
+
+    result = validate_commercial_value(chapters, book_id=book)
+
+    out_dir = ROOT / "output" / "commercial_validation"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_path = out_dir / f"{book}_validation.json"
+
+    out_path.write_text(
+        json.dumps(result, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+    print(f"OK: saved commercial validation: {out_path}")
+    print(json.dumps({
+        "book_id": book,
+        "commercial_promise": result.get("commercial_promise"),
+        "creative_potential": result.get("creative_potential"),
+        "binge_potential": result.get("binge_potential"),
+        "test50_value": result.get("test50_value"),
+        "investment_attractiveness": result.get("investment_attractiveness"),
+        "recommendation": result.get("recommendation"),
+    }, ensure_ascii=False, indent=2))
 
 
 def cmd_status(args: argparse.Namespace) -> None:
@@ -152,6 +191,11 @@ def build_parser() -> argparse.ArgumentParser:
         description="Unified controller for novel-growth-agent. Use this file only; scripts/*.py are internal.",
     )
     sub = parser.add_subparsers(dest="command", required=True)
+
+
+    p = sub.add_parser("validate", help="Run commercial validation from sample chapters.")
+    p.add_argument("--book", default="book_001")
+    p.set_defaults(func=cmd_validate)
 
     p = sub.add_parser("generate", help="Generate marketing assets, creatives, landing brief, UTM links, and campaign plan.")
     p.add_argument("--book", default="book_001")
