@@ -1,33 +1,49 @@
 ﻿# NEXT TASK
 
 ## 当前目标
-构建增长系统商业验证模块。
 
-==================================================
-模块名称
-==================================================
-Commercial Validation
+继续完善增长系统商业验证模块 Commercial Validation。
 
-==================================================
-输入
-==================================================
-中文原始小说（TXT），可选前10~20章做初步评估。
+## 当前已完成
 
-==================================================
-输出
-==================================================
-output/commercial_validation/
+已新增：
 
-==================================================
-评分维度
-==================================================
-1. Commercial Promise - 前10~20章是否具备持续阅读动力
-2. Creative Potential - 是否能提炼大量广告素材角度
-3. Binge Potential - 中后期是否持续升级
-4. Test50 Value - 是否值得先生产50章验证
-5. Investment Attractiveness - 是否值得投入资源
+core/commercial_validation.py
 
-==================================================
-输出建议
-==================================================
-SKIP / TEST_50_CHAPTERS / HIGH_PRIORITY
+该文件是商业验证核心计算模块。
+
+## 下一步 P1
+
+不要继续改 research_pipeline.py。
+
+下一步只做两件事之一：
+
+1. 给 commercial_validation.py 增加解释性输出：
+   - reasons
+   - risks
+   - evidence_samples
+   - suggested_next_action
+
+或：
+
+2. 设计调用入口：
+   - 不新增独立启动文件
+   - 优先考虑 main.py 子命令
+   - 输出到 output/commercial_validation/
+
+## 暂不做
+
+- 不接入 Story Bible
+- 不接入 Reader
+- 不接入 Reviewer
+- 不接入生产工厂
+- 不做全本生产
+- 不继续修 research_pipeline.py
+
+## 近期开发顺序
+
+P1：增强 commercial_validation.py 解释性  
+P2：增加章节抽样策略  
+P3：增加 main.py validate 子命令  
+P4：输出 commercial_validation JSON  
+P5：建立 project database  
