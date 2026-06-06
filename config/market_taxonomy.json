@@ -1,0 +1,13 @@
+﻿{
+  "version": "0.1",
+  "description": "Market taxonomy and ranking terms. Python code loads this file but must not hard-code these terms.",
+  "categories": [],
+  "ranking_terms": [],
+  "platform_terms": {
+    "facebook": [],
+    "google": [],
+    "reddit": [],
+    "tiktok": []
+  },
+  "synonyms": {}
+}
