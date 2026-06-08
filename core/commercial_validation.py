@@ -77,6 +77,106 @@ def score_from_count(count: int, low: int, high: int) -> float:
     return 4.0 + (count - low) * (5.0 / max(1, high - low))
 
 
+def build_hook_analysis(text: str) -> Dict[str, Any]:
+    """
+    Detect reusable commercial hooks from sampled source text.
+
+    V0.2 principle:
+    - This is still rule-based.
+    - Hook labels are market-facing and reusable.
+    - Source-language trigger words are kept as unicode escapes to avoid encoding issues.
+    """
+
+    hook_rules = {
+        "rebirth": [
+            "\u91cd\u751f", "\u56de\u5230", "\u518d\u6765\u4e00\u6b21",
+        ],
+        "revenge_counterattack": [
+            "\u590d\u4ec7", "\u62a5\u4ec7", "\u53cd\u51fb", "\u7ffb\u8eab", "\u8ba8\u56de",
+        ],
+        "family_conflict": [
+            "\u7239", "\u5a18", "\u5bb6\u91cc", "\u5bb6\u4eba", "\u59b9", "\u59d0", "\u5ac1", "\u5eb6\u59b9", "\u5ae1\u5eb6",
+        ],
+        "humiliation_face_slap": [
+            "\u7f9e\u8fb1", "\u8fb1", "\u8dea", "\u4e0d\u914d", "\u6253\u4f60", "\u6253\u8138",
+        ],
+        "marriage_divorce": [
+            "\u548c\u79bb", "\u79bb\u5a5a", "\u4eb2\u4e8b", "\u5ac1\u7ed9", "\u6210\u4eb2",
+        ],
+        "survival_threat": [
+            "\u6740", "\u6b7b", "\u5bb3\u6b7b", "\u9003", "\u6d3b\u4e0b\u53bb",
+        ],
+        "status_identity": [
+            "\u8eab\u4efd", "\u5ae1\u5973", "\u5eb6\u5973", "\u9996\u5bcc", "\u6743\u52bf", "\u5bb6\u4e1a",
+        ],
+        "healing_business_skill": [
+            "\u836f", "\u533b", "\u795e\u533b", "\u963f\u80f6", "\u751f\u610f", "\u8d5a\u94b1",
+        ],
+    }
+
+    detected_hooks: List[str] = []
+    hook_counts: Dict[str, int] = {}
+
+    for hook, terms in hook_rules.items():
+        count = 0
+        for term in terms:
+            count += text.count(term)
+        hook_counts[hook] = count
+        if count > 0:
+            detected_hooks.append(hook)
+
+    marketing_angles: List[Dict[str, str]] = []
+
+    angle_templates = {
+        "rebirth": {
+            "angle": "Rebirth second-chance hook",
+            "why_it_matters": "A second-chance opening can create immediate curiosity and strong read-next pressure.",
+        },
+        "revenge_counterattack": {
+            "angle": "Revenge and counterattack arc",
+            "why_it_matters": "Revenge arcs are easy to turn into short-form ad hooks and cliffhanger copy.",
+        },
+        "family_conflict": {
+            "angle": "Family oppression and emotional conflict",
+            "why_it_matters": "Family conflict is emotionally legible and can support strong Facebook/TikTok creatives.",
+        },
+        "humiliation_face_slap": {
+            "angle": "Humiliation-to-face-slap payoff",
+            "why_it_matters": "Humiliation followed by payoff is a reusable ad structure for serialized fiction.",
+        },
+        "marriage_divorce": {
+            "angle": "Marriage or separation pressure",
+            "why_it_matters": "Relationship stakes help simplify the story into clear ad copy.",
+        },
+        "survival_threat": {
+            "angle": "Life-or-death pressure",
+            "why_it_matters": "Survival pressure raises urgency and helps build cliffhanger-driven creatives.",
+        },
+        "status_identity": {
+            "angle": "Status and identity reversal",
+            "why_it_matters": "Identity/status shifts are useful for secret-reveal and comeback creatives.",
+        },
+        "healing_business_skill": {
+            "angle": "Special skill or business-growth hook",
+            "why_it_matters": "A visible skill path can support long-term growth, SEO themes, and episodic promotion.",
+        },
+    }
+
+    for hook in detected_hooks:
+        if hook in angle_templates:
+            marketing_angles.append(angle_templates[hook])
+
+    creative_signal_count = sum(1 for hook in detected_hooks if hook_counts.get(hook, 0) > 0)
+    creative_signal_count += min(20, sum(min(v, 3) for v in hook_counts.values()))
+
+    return {
+        "detected_hooks": detected_hooks,
+        "hook_counts": hook_counts,
+        "creative_signal_count": creative_signal_count,
+        "marketing_angles": marketing_angles,
+    }
+
+
 def build_validation_explanation(
     *,
     commercial_promise: float,
@@ -95,6 +195,9 @@ def build_validation_explanation(
     conflict_pressure = int(evidence.get("conflict_pressure", 0) or 0)
     turning_points = int(evidence.get("turning_points", 0) or 0)
     creative_hooks = int(evidence.get("creative_hooks", 0) or 0)
+    creative_signal_count = int(evidence.get("creative_signal_count", creative_hooks) or 0)
+    detected_hooks = list(evidence.get("detected_hooks", []) or [])
+    marketing_angles = list(evidence.get("marketing_angles", []) or [])
     chapter_count = int(evidence.get("chapter_count", 0) or 0)
 
     if commercial_promise >= 8:
@@ -110,6 +213,11 @@ def build_validation_explanation(
         reasons.append("Some ad angles exist, but creative density needs stronger extraction.")
     else:
         risks.append("Creative potential is currently weak; few clear ad hooks were detected by V0 rules.")
+
+    if detected_hooks:
+        reasons.append("Detected reusable commercial hooks: " + ", ".join(detected_hooks[:8]) + ".")
+    else:
+        risks.append("No strong reusable commercial hook category was detected.")
 
     if binge_potential >= 8:
         reasons.append("Conflict and turning-point density suggest good binge-reading potential.")
@@ -147,6 +255,9 @@ def build_validation_explanation(
             "conflict_pressure": conflict_pressure,
             "turning_points": turning_points,
             "creative_hooks": creative_hooks,
+            "creative_signal_count": creative_signal_count,
+            "detected_hooks": detected_hooks,
+            "marketing_angles": marketing_angles,
             "chapter_count": chapter_count,
         },
     }
@@ -184,13 +295,18 @@ def validate_commercial_value(
     conflict_pressure = count_conflict_pressure(sentences)
     turning_points = count_turning_points(sentences)
     creative_hooks = count_creative_hooks(sentences)
+    hook_analysis = build_hook_analysis(all_text)
+    creative_signal_count = max(
+        creative_hooks,
+        int(hook_analysis.get("creative_signal_count", 0) or 0),
+    )
 
     commercial_promise = clamp_score(
         score_from_count(question_pressure + conflict_pressure, low=5, high=35)
     )
 
     creative_potential = clamp_score(
-        score_from_count(creative_hooks, low=2, high=18)
+        score_from_count(creative_signal_count, low=2, high=18)
     )
 
     binge_potential = clamp_score(
@@ -229,6 +345,10 @@ def validate_commercial_value(
         "conflict_pressure": conflict_pressure,
         "turning_points": turning_points,
         "creative_hooks": creative_hooks,
+        "creative_signal_count": creative_signal_count,
+        "detected_hooks": hook_analysis.get("detected_hooks", []),
+        "hook_counts": hook_analysis.get("hook_counts", {}),
+        "marketing_angles": hook_analysis.get("marketing_angles", []),
         "note": "Rule-based first version. No Story Bible, no Reader/Reviewer, no rewrite.",
     }
 
