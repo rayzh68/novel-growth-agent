@@ -71,21 +71,74 @@ def cmd_export_feedback(args: argparse.Namespace) -> None:
 
 
 
+
 def cmd_validate(args: argparse.Namespace) -> None:
     from core.commercial_validation import validate_commercial_value
+    from core.book_sampling import load_and_sample_raw_novel
 
     book = args.book
-    root = ROOT / "input" / book / "sample_chapters"
+    sample_root = ROOT / "input" / book / "sample_chapters"
+    raw_path = ROOT / "input" / book / "raw_novel.txt"
 
     chapters = []
-    if root.exists():
-        for path in sorted(root.glob("chapter_*.md")):
+    sample_meta = {
+        "source": None,
+        "total_chapters": None,
+        "selected_count": None,
+        "selected_chapters": [],
+    }
+
+    if sample_root.exists():
+        files = sorted(sample_root.glob("chapter_*.md")) + sorted(sample_root.glob("chapter_*.txt"))
+        for path in files:
             chapters.append(path.read_text(encoding="utf-8-sig", errors="ignore"))
+            sample_meta["selected_chapters"].append({
+                "sample_label": "manual_sample",
+                "chapter_title": path.name,
+                "path": str(path),
+            })
+        if chapters:
+            sample_meta["source"] = "sample_chapters"
+            sample_meta["selected_count"] = len(chapters)
+
+    if not chapters and raw_path.exists():
+        sample = load_and_sample_raw_novel(
+            raw_path,
+            front=args.front,
+            mid_each=args.mid_each,
+            end=args.end,
+        )
+        selected = sample.get("selected_chapters", [])
+        chapters = [x.get("text", "") for x in selected if x.get("text")]
+        sample_meta = {
+            "source": "raw_novel",
+            "raw_path": str(raw_path),
+            "total_chapters": sample.get("total_chapters"),
+            "selected_count": sample.get("selected_count"),
+            "front": sample.get("front"),
+            "mid_each": sample.get("mid_each"),
+            "end": sample.get("end"),
+            "chapter_quality": sample.get("chapter_quality"),
+            "selected_chapters": [
+                {
+                    "sample_label": x.get("sample_label"),
+                    "chapter_index": x.get("chapter_index"),
+                    "chapter_title": x.get("chapter_title"),
+                    "source_line": x.get("source_line"),
+                }
+                for x in selected
+            ],
+        }
 
     if not chapters:
-        raise SystemExit(f"No sample chapters found under: {root}")
+        raise SystemExit(
+            "No validation input found. Expected either:\n"
+            f"- {sample_root}\\chapter_*.md\n"
+            f"- {raw_path}"
+        )
 
     result = validate_commercial_value(chapters, book_id=book)
+    result["sample"] = sample_meta
 
     out_dir = ROOT / "output" / "commercial_validation"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -99,6 +152,10 @@ def cmd_validate(args: argparse.Namespace) -> None:
     print(f"OK: saved commercial validation: {out_path}")
     print(json.dumps({
         "book_id": book,
+        "source": sample_meta.get("source"),
+        "total_chapters": sample_meta.get("total_chapters"),
+        "selected_count": sample_meta.get("selected_count"),
+        "chapter_quality": (sample_meta.get("chapter_quality") or {}).get("quality"),
         "commercial_promise": result.get("commercial_promise"),
         "creative_potential": result.get("creative_potential"),
         "binge_potential": result.get("binge_potential"),
@@ -193,8 +250,11 @@ def build_parser() -> argparse.ArgumentParser:
     sub = parser.add_subparsers(dest="command", required=True)
 
 
-    p = sub.add_parser("validate", help="Run commercial validation from sample chapters.")
+    p = sub.add_parser("validate", help="Run commercial validation from sample chapters or raw_novel.txt.")
     p.add_argument("--book", default="book_001")
+    p.add_argument("--front", type=int, default=20)
+    p.add_argument("--mid-each", type=int, default=3)
+    p.add_argument("--end", type=int, default=5)
     p.set_defaults(func=cmd_validate)
 
     p = sub.add_parser("generate", help="Generate marketing assets, creatives, landing brief, UTM links, and campaign plan.")
