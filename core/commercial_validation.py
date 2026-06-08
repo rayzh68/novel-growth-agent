@@ -77,6 +77,81 @@ def score_from_count(count: int, low: int, high: int) -> float:
     return 4.0 + (count - low) * (5.0 / max(1, high - low))
 
 
+def build_validation_explanation(
+    *,
+    commercial_promise: float,
+    creative_potential: float,
+    binge_potential: float,
+    test50_value: float,
+    investment_attractiveness: float,
+    recommendation: str,
+    evidence: Dict[str, Any],
+) -> Dict[str, Any]:
+    reasons: List[str] = []
+    risks: List[str] = []
+    suggested_next_action = recommendation
+
+    question_pressure = int(evidence.get("question_pressure", 0) or 0)
+    conflict_pressure = int(evidence.get("conflict_pressure", 0) or 0)
+    turning_points = int(evidence.get("turning_points", 0) or 0)
+    creative_hooks = int(evidence.get("creative_hooks", 0) or 0)
+    chapter_count = int(evidence.get("chapter_count", 0) or 0)
+
+    if commercial_promise >= 8:
+        reasons.append("Opening and sampled chapters show strong commercial promise through unresolved pressure and conflict.")
+    elif commercial_promise >= 6:
+        reasons.append("Commercial promise is present but not yet clearly explosive.")
+    else:
+        risks.append("Commercial promise is weak; sampled chapters may not create enough must-continue-reading pressure.")
+
+    if creative_potential >= 8:
+        reasons.append("Sampled chapters contain many potentially reusable ad angles.")
+    elif creative_potential >= 5:
+        reasons.append("Some ad angles exist, but creative density needs stronger extraction.")
+    else:
+        risks.append("Creative potential is currently weak; few clear ad hooks were detected by V0 rules.")
+
+    if binge_potential >= 8:
+        reasons.append("Conflict and turning-point density suggest good binge-reading potential.")
+    elif binge_potential >= 6:
+        reasons.append("There is some continuation drive, but long-form stickiness still needs validation.")
+    else:
+        risks.append("Binge potential is weak; middle and later sampled sections may not sustain momentum.")
+
+    if test50_value >= 7:
+        reasons.append("The book is suitable for a 50-chapter market test before full investment.")
+    else:
+        risks.append("The book may not be strong enough for a 50-chapter validation round.")
+
+    if chapter_count < 20:
+        risks.append("Sample size is small; validation confidence is limited.")
+
+    if recommendation == "HIGH_PRIORITY":
+        suggested_next_action = "Prioritize this book for 50-chapter production and growth testing."
+    elif recommendation == "TEST_50_CHAPTERS":
+        suggested_next_action = "Produce and test the first 50 adapted chapters before committing to full-book production."
+    elif recommendation == "LOW_PRIORITY_TEST":
+        suggested_next_action = "Only test if production capacity is available; otherwise keep in reserve."
+    else:
+        suggested_next_action = "Skip for now unless later market evidence changes."
+
+    return {
+        "summary": {
+            "recommendation": recommendation,
+            "suggested_next_action": suggested_next_action,
+        },
+        "reasons": reasons,
+        "risks": risks,
+        "evidence_samples": {
+            "question_pressure": question_pressure,
+            "conflict_pressure": conflict_pressure,
+            "turning_points": turning_points,
+            "creative_hooks": creative_hooks,
+            "chapter_count": chapter_count,
+        },
+    }
+
+
 def validate_commercial_value(
     chapters: List[str],
     *,
@@ -145,6 +220,18 @@ def validate_commercial_value(
     else:
         recommendation = "SKIP"
 
+    evidence = {
+        "book_id": book_id,
+        "chapter_count": chapter_count,
+        "total_chars": total_chars,
+        "sentence_count": len(sentences),
+        "question_pressure": question_pressure,
+        "conflict_pressure": conflict_pressure,
+        "turning_points": turning_points,
+        "creative_hooks": creative_hooks,
+        "note": "Rule-based first version. No Story Bible, no Reader/Reviewer, no rewrite.",
+    }
+
     result = CommercialValidationResult(
         commercial_promise=commercial_promise,
         creative_potential=creative_potential,
@@ -152,17 +239,17 @@ def validate_commercial_value(
         test50_value=test50_value,
         investment_attractiveness=investment_attractiveness,
         recommendation=recommendation,
-        evidence={
-            "book_id": book_id,
-            "chapter_count": chapter_count,
-            "total_chars": total_chars,
-            "sentence_count": len(sentences),
-            "question_pressure": question_pressure,
-            "conflict_pressure": conflict_pressure,
-            "turning_points": turning_points,
-            "creative_hooks": creative_hooks,
-            "note": "Rule-based first version. No Story Bible, no Reader/Reviewer, no rewrite.",
-        },
+        evidence=evidence,
     )
 
-    return asdict(result)
+    data = asdict(result)
+    data["explanation"] = build_validation_explanation(
+        commercial_promise=commercial_promise,
+        creative_potential=creative_potential,
+        binge_potential=binge_potential,
+        test50_value=test50_value,
+        investment_attractiveness=investment_attractiveness,
+        recommendation=recommendation,
+        evidence=evidence,
+    )
+    return data
